@@ -1,0 +1,113 @@
+{% load static %}
+
+<!doctype html>
+<html lang="zxx">
+<head>
+  {% include 'TZ/head.html' %}
+
+  <!-- CSS here -->
+      {% include 'TZ/CSS.html' %}
+</head>
+
+<body>
+  <header>
+    <!-- Header Start -->
+    {% include 'TZ/HeaderStart.html' %}
+    <!-- Header End -->
+  </header>
+  <main>
+      <!-- Hero Area Start-->
+      <div class="slider-area ">
+          <div class="single-slider slider-height2 d-flex align-items-center">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xl-12">
+                          <div class="hero-cap text-center">
+                              <h2>Cart List</h2>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--================Cart Area =================-->
+      <section class="cart_area section_padding">
+        <div class="container">
+          <div class="cart_inner">
+            <div class="table-responsive">
+              <h2>Your Cart</h2>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Image</th>
+                      <th>Product</th>
+                      <th>Quantity</th>
+                      <th>Price</th>
+                      <th>Subtotal</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   {% for item in cart %}
+                    <tr>
+                      <td>
+                          {% if item.image_url %}
+                          <img src="{{ item.image_url }}" width="80" alt="{{ item.product_name }}">
+                      {% else %}
+                          No Image
+                      {% endif %}
+                      </td>
+                      <td>
+                        {% if item.content_object.ProLName %}
+                          {{ item.content_object.ProLName }}
+                        {% elif item.content_object.PopIName %}
+                          {{ item.content_object.PopIName }}
+                        {% elif item.content_object.NewAName %}
+                          {{ item.content_object.NewAName }}
+                        {% else %}
+                          No Product Name
+                        {% endif %}
+                      </td>
+                      <td>{{ item.quantity }}</td>
+                      <td>${{ item.price|floatformat:2 }}</td>
+                      <td>${{ item.subtotal|floatformat:2 }}</td>
+                      <td>
+                          <form method="post" action="{% url 'remove_from_cart' item.id %}">
+                              {% csrf_token %}
+                              <button type="submit" style="color: red; background:none; border:none; cursor:pointer;">Remove</button>
+                          </form>
+                      </td>
+                  </tr>
+
+                    {% endfor %}
+
+
+
+                  </tbody>
+                </table>
+                <h3>Total: ${{ total_price|floatformat:2 }}</h3>
+
+              <div class="checkout_btn_inner float-right">
+                <a class="btn_1" href="{% url 'ShopTZ' %}">Continue Shopping</a>
+                <a class="btn_1 checkout_btn_1" href="{% url 'CheckoutTZ' %}">Proceed to checkout</a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!--================End Cart Area =================-->
+  </main>>
+  <footer>
+      <!-- Footer Start-->
+      {% include 'TZ/FooterStart.html' %}
+      <!-- Footer End-->
+  </footer>
+  <!--? Search model Begin -->
+  {% include 'TZ/SearchModelBegin.html' %}
+  <!-- Search model end -->
+
+  <!-- JS here -->
+
+  {% include 'TZ/JShere.html' %}
+
+</body>
+</html>

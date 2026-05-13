@@ -1,0 +1,71 @@
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    {% include 'TZ/head.html' %}
+
+    {% include 'TZ/CSS.html' %}
+</head>
+
+<body>
+    <!--? Preloader Start -->
+    {% include 'TZ/PreloaderStart.html' %}
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        {% include 'TZ/HeaderStart.html' %}
+        <!-- Header End -->
+    </header>
+    <main>
+        <!-- Hero Area Start-->
+        <div class="slider-area ">
+            <div class="single-slider slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap text-center">
+                                <h2>Privacy Policy</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Area End-->
+        <!-- About Details Start -->
+        <div class="about-details section-padding30">
+            <div class="container">
+                <div class="row">
+                    {% for privacy in privacys %}
+                        <div class="offset-xl-1 col-lg-8">
+                            <div class="about-details-cap mb-50">
+                                <h4>{{ privacy.Title_1|safe }}</h4>
+                                <p>{{ privacy.Description_1|safe }}</p>
+                            </div>
+                            <div class="about-details-cap" style="margin-bottom: 60px;">
+                                <h4>{{ privacy.Title_2|safe }}</h4>
+                                <p>{{ privacy.Description_2|safe }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- About Details End -->
+    </main>
+    <footer>
+        <!-- Footer Start-->
+       {% include 'TZ/FooterStart.html' %}
+        <!-- Footer End-->
+    </footer>
+    <!--? Search model Begin -->
+    {% include 'TZ/SearchModelBegin.html' %}
+    <!-- Search model end -->
+
+    <!-- JS here -->
+
+    {% include 'TZ/JShere.html' %}
+
+</body>
+</html>

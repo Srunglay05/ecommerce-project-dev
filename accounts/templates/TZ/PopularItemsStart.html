@@ -1,0 +1,43 @@
+{% load static %}
+
+<div class="popular-items section-padding30">
+    <div class="container">
+        <!-- Section tittle -->
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-10">
+                <div class="section-tittle mb-70 text-center">
+                    <h2>Popular Items</h2>
+                    <p>{{ product.PopIDescription }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row flex-nowrap overflow-auto">
+        {% for popular_item in popular_items %}
+            <div class="single-popular-product text-center">
+                <div class="product-img">
+                <img src="{{ popular_item.PopIImage.url }}" alt="{{ popular_item.PopIName }}">
+                </div>
+                <br>
+                <div class="product-caption">
+                {% if popular_item.id %}
+                    <a href="{% url 'ProDetailTZ' 'popular' popular_item.id %}">{{ popular_item.PopIName }}</a>
+                {% endif %}
+                <br>
+                <span>${{ popular_item.PopIPrice }}</span>
+                </div>
+                
+            </form>
+
+            </div>
+        {% endfor %}
+
+
+</div>
+
+        <div class="row justify-content-center">
+            <div class="room-btn pt-70">
+                <a href="{% url 'ShopTZ' %}" class="btn view-btn1">View More Products</a>
+            </div>
+        </div>
+    </div>
+</div>

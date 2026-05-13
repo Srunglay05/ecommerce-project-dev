@@ -1,0 +1,172 @@
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    {% include 'TZ/head.html' %}
+    
+    {% include 'TZ/CSS.html' %}
+    
+</head>
+
+<style>
+.popular-caption a {
+    color: #222 !important;  /* Dark text */
+    text-decoration: none;   /* Optional */
+}
+
+.popular-items .product-caption span,
+    .new-product-area .product-caption span,
+    .single-popular-items .popular-caption span {
+        color: #e92a2a !important;
+    }
+    /* Reduce bottom margin of product items */
+.single-popular-items.mb-50 {
+    margin-bottom: 20px !important;
+}
+
+/* Adjust pagination margin */
+.blog-pagination {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+</style>
+
+
+<body>
+    <!--? Preloader Start -->
+    {% include 'TZ/PreloaderStart.html' %}
+    <!-- Preloader End -->
+    <header>
+        <!-- Header Start -->
+         {% include 'TZ/HeaderStart.html' %}
+        <!-- Header End -->
+    </header>
+    <main>
+        <!-- Hero Area Start-->
+        <div class="slider-area ">
+            <div class="single-slider slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap text-center">
+                                <h2>AMORE Products</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Area End-->
+        <!-- Latest Products Start -->
+        <section class="popular-items latest-padding">
+            <div class="container">
+                <div class="row product-btn justify-content-between mb-40">
+                    <div class="properties__button">
+                        <!--Nav Button  -->
+                        <nav>                                                      
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-lipgloss-tab" data-toggle="tab" href="#nav-lipgloss" role="tab" aria-controls="nav-lipgloss" aria-selected="true">Lip Gloss</a>
+                                    <a class="nav-item nav-link" id="nav-blush-tab" data-toggle="tab" href="#nav-blush" role="tab" aria-controls="nav-blush" aria-selected="false">Blush</a>
+                                    
+                            </nav>
+ 
+                        </nav>
+                        <!--End Nav Button  -->
+                    </div>
+                    <!-- Grid and List view -->
+                    <div class="grid-list-view">
+                    </div>
+                    <!-- Select items -->
+                    
+                </div>
+                <!-- Nav Card -->
+     <div class="tab-content" id="nav-tabContent">
+      <!-- Lip Gloss tab -->
+      <div class="tab-pane fade show active" id="nav-lipgloss" role="tabpanel" aria-labelledby="nav-lipgloss-tab">
+        <div class="row">
+          {% for product in lip_gloss %}
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div class="single-popular-items mb-50 text-center">
+                <div class="popular-img">
+                  <img src="{{ product.ProLImage.url }}" alt="">
+                </div>
+                <div class="popular-caption">
+                  <a href="{% url 'ProDetailTZ' 'list' product.id %}">{{ product.ProLName }}</a>
+                  <span>${{ product.ProLPrice }}</span>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+  <!-- Blush tab -->
+  <div class="tab-pane fade" id="nav-blush" role="tabpanel" aria-labelledby="nav-blush-tab">
+    <div class="row">
+      {% for product in blush %}
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+          <div class="single-popular-items mb-50 text-center">
+            <div class="popular-img">
+              <img src="{{ product.ProLImage.url }}" alt="">
+            </div>
+            <div class="popular-caption">
+              <a href="{% url 'ProDetailTZ' 'list' product.id %}">{{ product.ProLName }}</a>
+              <span>${{ product.ProLPrice }}</span>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+
+
+                <!-- End Nav Card -->
+            </div>
+        </section>
+        <!-- Latest Products End -->
+        <!-- page item starts-->
+            <nav class="blog-pagination justify-content-center d-flex">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a href="#" class="page-link" aria-label="Previous">
+                            <i class="ti-angle-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item active">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link" aria-label="Next">
+                            <i class="ti-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        <!-- page item end-->
+    </main>
+    <footer>
+        <!-- Footer Start-->
+        {% include 'TZ/FooterStart.html' %}
+        <!-- Footer End-->
+    </footer>
+    <!--? Search model Begin -->
+    {% include 'TZ/SearchModelBegin.html' %}
+
+    <!-- Search model end -->
+
+<!-- JS here -->
+    {% include 'TZ/JShere.html' %}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+</body>
+</html>

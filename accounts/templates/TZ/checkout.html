@@ -1,0 +1,301 @@
+{% load static %}
+<!doctype html>
+<html lang="zxx">
+<head>
+  {% include 'TZ/head.html' %}
+  {% include 'TZ/CSS.html' %}
+  <style>
+    .billing_details .row {
+      display: flex;
+      justify-content: center;
+    }
+    .order_box {
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+    .list li a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .middle, .last {
+      margin-left: 10px;
+    }
+    #qr-image-container {
+      margin-top: 15px;
+    }
+
+    /* Custom Select Styles */
+    .custom-select {
+      position: relative;
+      width: 280px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 8px 12px;
+      background: white;
+      user-select: none;
+      font-size: 16px;
+      line-height: 1.4;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 50px;
+    }
+
+    .selected-option {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 600;
+    }
+
+    .selected-option img {
+      max-width: 120px;
+      max-height: 120px;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+
+    .options-list {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      border: 1px solid #ccc;
+      background: white;
+      max-height: 250px;
+      overflow-y: auto;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      border-radius: 0 0 4px 4px;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+      gap: 12px;
+      font-size: 15px;
+      white-space: nowrap;
+    }
+
+    .option:last-child {
+      border-bottom: none;
+    }
+
+    .option:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Hide small images inside dropdown options - force with !important */
+    .options-list .option img {
+      display: none !important;
+    }
+
+    .qr-name {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    {% include 'TZ/HeaderStart.html' %}
+  </header>
+
+  <main>
+    <div class="slider-area">
+      <div class="single-slider slider-height2 d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="hero-cap text-center">
+                <h2>Checkout</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="checkout_area section_padding">
+      <div class="container">
+        <div class="billing_details">
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <div class="order_box">
+                <form method="post" action="{% url 'checkout' %}" enctype="multipart/form-data">
+                  {% csrf_token %}
+                  <h2>Billing Details</h2>
+                  <input type="text" name="customerName" class="form-control" placeholder="Full Name" required>
+                  <input type="tel" name="customerPhone" class="form-control" placeholder="Phone Number" required>
+                  <input type="addre" name="customerAddress" class="form-control" placeholder="Address" required>
+                  <input type="email" name="customerEmail" class="form-control" placeholder="Email" required>
+
+                  <h2>Your Order</h2>
+                  <ul class="list">
+                    <li>
+                      <a href="#">Product <span>Total</span></a>
+                    </li>
+                    {% for item in cart_items %}
+                    <li>
+                      <a href="#">
+                        {{ item.content_object.get_name|default:item.content_object }}
+                        <span class="middle">x {{ item.quantity }}</span>
+                        <span class="last">${{ item.price|floatformat:2 }}</span>
+                      </a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+
+                  <ul class="list list_2">
+                    <li><a href="#">Subtotal <span>${{ subtotal|floatformat:2 }}</span></a></li>
+                    <li><a href="#">Shipping <span>${{ shipping|floatformat:2 }}</span></a></li>
+                    <li><a href="#">Total <span>${{ total|floatformat:2 }}</span></a></li>
+                  </ul>
+
+                  <input type="hidden" name="totalAmount" value="{{ total }}">
+                  <input type="hidden" name="items" value='{{ cart_items_json|escapejs }}'>
+
+                  <div class="form-group mb-3">
+                    <label for="QRCodeSelect">Select QR Code:</label>
+                    <div id="custom-qr-select" class="custom-select" tabindex="0" aria-haspopup="listbox" aria-expanded="false" role="combobox" aria-labelledby="QRCodeSelectLabel">
+                      <div id="selected-qr" class="selected-option">-- Choose QR Code --</div>
+                      <div id="qr-options" class="options-list" style="display:none;" role="listbox" tabindex="-1">
+                        {% for qr in qr_codes %}
+                        <div class="option" data-id="{{ qr.id }}" data-image="{{ qr.qrImage.url }}" role="option" tabindex="0">
+                          <!-- Only name shown in dropdown options -->
+                          <span class="qr-name">{{ qr.qrName }}</span>
+                        </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                    <input type="hidden" name="QRCodeSelect" id="QRCodeSelectInput" value="">
+                  </div>
+
+                  <div id="qr-image-container" style="display:none; margin-top: 20px;">
+                    <label>Selected QR Code Image:</label><br>
+                    <img id="selected-qr-image" src="" alt="QR Code Image"
+                        style="max-width: 300px; max-height: 300px; border: 1px solid #ccc; border-radius: 8px; display: block; margin-top: 10px;">
+                  </div>
+
+                  <div class="creat_account mb-3">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I’ve read and accept the </label>
+                    <a href="#">terms & conditions*</a>
+                  </div>
+
+                  <button type="submit" class="btn_3 w-100">Place Order</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    {% include 'TZ/FooterStart.html' %}
+  </footer>
+
+  {% include 'TZ/SearchModelBegin.html' %}
+  {% include 'TZ/JShere.html' %}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const customSelect = document.getElementById('custom-qr-select');
+  const selectedOption = document.getElementById('selected-qr');
+  const optionsList = document.getElementById('qr-options');
+  const hiddenInput = document.getElementById('QRCodeSelectInput');
+  const qrImageContainer = document.getElementById('qr-image-container');
+  const selectedQrImage = document.getElementById('selected-qr-image');
+
+  // Toggle dropdown open/close on click
+  customSelect.addEventListener('click', () => {
+    const expanded = customSelect.getAttribute('aria-expanded') === 'true';
+    customSelect.setAttribute('aria-expanded', !expanded);
+    optionsList.style.display = expanded ? 'none' : 'block';
+  });
+
+  // Handle option selection
+  optionsList.querySelectorAll('.option').forEach(option => {
+    option.addEventListener('click', e => {
+      e.stopPropagation();
+      const id = option.getAttribute('data-id');
+      const image = option.getAttribute('data-image');
+      const name = option.querySelector('.qr-name').textContent.trim();
+
+      // Update selected option display - only show name (no image)
+      selectedOption.textContent = name;
+
+      // Set hidden input value
+      hiddenInput.value = id;
+
+      // Show large QR image below
+      selectedQrImage.src = image;
+      qrImageContainer.style.display = 'block';
+
+      // Close dropdown and update aria
+      optionsList.style.display = 'none';
+      customSelect.setAttribute('aria-expanded', 'false');
+
+      // Trigger change event on hidden input (if needed)
+      hiddenInput.dispatchEvent(new Event('change'));
+    });
+
+    // Keyboard accessibility: select option on Enter or Space key
+    option.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        option.click();
+      }
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', e => {
+    if (!customSelect.contains(e.target)) {
+      optionsList.style.display = 'none';
+      customSelect.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Keyboard control for opening/closing dropdown on combobox
+  customSelect.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      const expanded = customSelect.getAttribute('aria-expanded') === 'true';
+      customSelect.setAttribute('aria-expanded', !expanded);
+      optionsList.style.display = expanded ? 'none' : 'block';
+    }
+    if (e.key === 'Escape') {
+      optionsList.style.display = 'none';
+      customSelect.setAttribute('aria-expanded', 'false');
+      customSelect.focus();
+    }
+  });
+});
+</script>
+
+</body>
+</html>

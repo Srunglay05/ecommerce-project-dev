@@ -1,0 +1,64 @@
+{% load static %}
+
+<div class="slider-area ">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider slider-height d-flex align-items-center slide-bg">
+                    <div class="container">
+                        {% for slider in sliders %}
+                            {% if forloop.counter <= 1 %}
+                            <div class="row justify-content-between align-items-center">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                                        <div class="hero__caption">
+                                            {{ slider.SildeHead|safe }}
+                                            <br>
+                                            {{ slider.SlideBody|safe }}
+                                            <br>
+                                            <!-- Hero-btn -->
+                                            <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s" data-duration="2000ms">
+                                                <a href="{% url 'ShopTZ' %}" class="btn hero-btn">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 d-none d-sm-block d-flex justify-content-center">
+                                        <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
+                                            <img src="{{ slider.SlideImage.url }}" alt="" class="heartbeat">
+                                        </div>
+                                    </div>
+
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <!-- Single Slider -->
+                <div class="single-slider slider-height d-flex align-items-center slide-bg">
+                    <div class="container">
+                        {% for slider in sliders %}
+                            {% if forloop.counter >= 2 %}
+                            <div class="row justify-content-between align-items-center">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                                        <div class="hero__caption">
+                                            {{ slider.SildeHead|safe }}
+                                            <br>
+                                            {{ slider.SlideBody|safe }}
+                                            <br>
+                                            <!-- Hero-btn -->
+                                            <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s" data-duration="2000ms">
+                                                <a href="{% url 'ShopTZ' %}" class="btn hero-btn">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 d-none d-sm-block d-flex justify-content-center">
+                                        <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
+                                            <img src="{{ slider.SlideImage.url }}" alt="" class="heartbeat">
+                                        </div>
+                                    </div>
+
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,58 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+   <head>
+      {% include 'TZ/head.html' %}
+    
+      <!-- CSS here -->
+         {% include 'TZ/CSS.html' %}
+    </head>
+
+<body>
+   <!-- Preloader Start -->
+
+    {% include 'TZ/PreloaderStart.html' %}
+
+    <!-- Preloader End -->
+
+    <header>
+        <!-- Header Start -->
+       {% include 'TZ/HeaderStart.html' %}
+        <!-- Header End -->
+      <!-- Header End -->
+   </header>
+      <main>
+      <!-- Hero Area Start-->
+      <div class="slider-area ">
+            <div class="single-slider slider-height2 d-flex align-items-center">
+               <div class="container">
+                  <div class="row">
+                        <div class="col-xl-12">
+                           <div class="hero-cap text-center">
+                              <h2>Blog details</h2>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+      </div>
+      
+      <!--================Blog Area =================-->
+      {% include 'TZ/BlogAreaDetail.html' %}
+      <!--================ Blog Area end =================-->
+   </main>
+   <footer>
+      <!-- Footer Start-->
+        {% include 'TZ/FooterStart.html' %}
+        <!-- Footer End-->
+    </footer>
+    <!--? Search model Begin -->
+    {% include 'TZ/SearchModelBegin.html' %}
+    <!-- Search model end -->
+  
+   <!-- JS here -->
+	
+      {% include 'TZ/JShere.html' %}
+</body>
+
+</html>

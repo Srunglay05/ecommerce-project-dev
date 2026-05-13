@@ -1,0 +1,49 @@
+<h2>Product List</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  {% for product in products %}
+    <div style="border: 1px solid #ccc; padding: 10px; width: 250px;">
+      <img src="{{ product.ProLImage.url }}" alt="{{ product.ProLName }}" width="200" height="200">
+      <h3>{{ product.ProLName }}</h3>
+      <p><strong>Price:</strong> ${{ product.ProLPrice }}</p>
+      <p><strong>Availability:</strong> {{ product.availability }}</p>
+      <form method="post" action="{% url 'add_to_cart' 'list' product.id %}">
+        {% csrf_token %}
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+  {% endfor %}
+</div>
+
+<h2>Popular Items</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  {% for item in popular_items %}
+    <div style="border: 1px solid #ccc; padding: 10px; width: 250px;">
+      <img src="{{ item.PopIImage.url }}" alt="{{ item.PopIName }}" width="200" height="200">
+      <h3>{{ item.PopIName }}</h3>
+      <p><strong>Price:</strong> ${{ item.PopIPrice }}</p>
+      <p><strong>Availability:</strong> {{ item.availability }}</p>
+      <form method="post" action="{% url 'add_to_cart' 'popular' item.id %}">
+        {% csrf_token %}
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+  {% endfor %}
+</div>
+
+<h2>New Arrivals</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  {% for arrival in new_arrivals %}
+    <div style="border: 1px solid #ccc; padding: 10px; width: 250px;">
+      <img src="{{ arrival.NewAImage.url }}" alt="{{ arrival.NewAName }}" width="200" height="200">
+      <h3>{{ arrival.NewAName }}</h3>
+      <p><strong>Price:</strong> ${{ arrival.NewAPrice }}</p>
+      <p><strong>Availability:</strong> {{ arrival.availability }}</p>
+      <form method="post" action="{% url 'add_to_cart' 'new' arrival.id %}">
+        {% csrf_token %}
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+  {% endfor %}
+</div>
+
+<a href="{% url 'view_cart' %}">View Cart</a>

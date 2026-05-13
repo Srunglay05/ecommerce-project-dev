@@ -1,0 +1,39 @@
+{% load static %}
+
+<section class="new-product-area section-padding30">
+            <div class="container">
+                <!-- Section tittle -->
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="section-tittle mb-70">
+                            <h2>New Arrivals</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                   {% for new_arrival in new_arrivals %}
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-new-pro mb-30 text-center">
+                            <div class="product-img">
+                                <img src="{{ new_arrival.NewAImage.url }}" alt="{{ new_arrival.NewAName }}">
+                            </div>
+                            <div class="product-caption">
+                                {% if new_arrival.id %}
+                                <a href="{% url 'ProDetailTZ' 'new' new_arrival.id %}">{{ new_arrival.NewAName }}</a>
+                                {% endif %}
+                                <span>${{ new_arrival.NewAPrice }}</span>
+                            </div>
+                            <!-- Add to cart form -->
+                            
+
+                            </div>
+                        </div>
+                    {% endfor %}
+
+
+
+                    
+                    
+                </div>
+            </div>
+        </section>

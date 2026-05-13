@@ -1,0 +1,130 @@
+{% load static %}
+
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    {% include 'TZ/head.html' %}
+
+    <!-- CSS here -->
+    {% include 'TZ/CSS.html' %}
+</head>
+<style>
+    .popular-scroll {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .popular-scroll > div {
+        scroll-snap-align: start;
+        min-width: 250px;
+        flex-shrink: 0;
+    }
+    .popular-items .row.flex-nowrap {
+    display: flex;
+    justify-content: center;  /* Center the items horizontally */
+    flex-wrap: nowrap;
+    overflow-x: auto;         /* Keep horizontal scroll if needed */
+    gap: 15px;                /* Space between items */
+}
+
+.popular-items .single-popular-product {
+    flex: 0 0 auto;           /* Prevent items from shrinking */
+    max-width: 250px;         /* Optional max width for consistent size */
+    text-align: center;
+}
+
+.popular-items .product-img img {
+    max-width: 100%;          /* Make image fit the container */
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+/* Your existing styles ... */
+
+    .popular-items .product-caption a,
+    .new-product-area .product-caption a,
+    .popular-items .section-tittle h2,
+    .new-product-area .section-tittle h2,
+    .popular-items .product-caption span,
+    .new-product-area .product-caption span,
+    .single-popular-items .popular-caption a {
+        color: #111010 !important;
+    }
+
+    .popular-items .product-caption span,
+    .new-product-area .product-caption span,
+    .single-popular-items .popular-caption span {
+        color: #e92a2a !important;
+    }
+
+    /* Reduce spacing between Newest Arrivals and Popular Items */
+.popular-items.latest-padding {
+    padding-bottom: 10px !important;
+}
+
+.popular-items.section-padding30 {
+    padding-top: 10px !important;
+}
+
+/* Optional: also remove margin between sections */
+.popular-items {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+
+</style>
+
+<body>
+    <!--? Preloader Start -->
+
+    {% include 'TZ/PreloaderStart.html' %}
+
+    <!-- Preloader End -->
+
+    <header>
+        <!-- Header Start -->
+       {% include 'TZ/HeaderStart.html' %}
+        <!-- Header End -->
+    </header>
+
+    <main>
+        <!--? slider Area Start -->
+        {% include 'TZ/SliderAreaStart.html' %}
+        <!-- slider Area End-->
+
+        <!-- ? New Product Start -->
+        {% include 'TZ/NewProductStart.html' %}
+        <!--  New Product End -->
+          
+        <!--? Gallery Area Start -->
+        {% include 'TZ/GalleryAreaStart.html' %}
+        <!-- Gallery Area End -->
+        <br>
+        <br>
+       <!--? Popular Items Start --> 
+        {% include 'TZ/PopularItemsStart.html' %}
+        <!--? Popular Items E <!nd -->
+
+    </main>
+    <footer>
+        <!-- Footer Start-->
+        {% include 'TZ/FooterStart.html' %}
+        <!-- Footer End-->
+    </footer>
+    <!--? Search model Begin -->
+    {% include 'TZ/SearchModelBegin.html' %}
+    <!-- Search model end -->
+
+    <!-- JS here -->
+
+    {% include 'TZ/JShere.html' %}
+    
+</body>
+</html>

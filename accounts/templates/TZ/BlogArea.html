@@ -1,0 +1,69 @@
+{% load static %}
+
+<section class="blog_area section-padding d-flex justify-content-center align-items-center flex-column">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto mb-5 mb-lg-0">
+                        <div class="blog_left_sidebar">
+                            <article class="blog_item">
+                                {% for blog in blogs %}
+                                    <div class="blog_item_img text-center">
+                                        <img class="card-img rounded-0" src="{{ blog.BlogImage.url }}" alt="" style="max-width: 500px;">
+                                        <a href="{% url 'BlogDetailTZ' blog.id %}" class="blog_item_date">
+                                            <h3>{{ blog.BlogDateDay|safe }}</h3>
+                                            <p>{{ blog.BlogDateMonth|safe }}</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="blog_details">
+                                        <a class="d-inline-block" href="{% url 'BlogDetailTZ' blog.id %}">
+                                            <h2>{{ blog.BlogName|safe }}</h2>
+                                        </a>
+                                        <p>{{ blog.Blogdescription|safe }}</p>
+                                    
+                                    <div class="rating-info">
+                                        <span class="rating-stars">
+                                            {% for i in "12345" %}
+                                                {% if i|add:"0" <= blog.BlogRate|default:"0"|add:"0" %}
+                                                    <i class="fas fa-star text-warning"></i>
+                                                {% else %}
+                                                    <i class="far fa-star text-warning"></i>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </span>
+                                        <span class="rating-text">{{ blog.BlogRate|default:"0" }}</span>
+                                    </div>
+                                    <br>
+                                {% endfor %}
+
+                            </article>
+
+                            
+
+                            <nav class="blog-pagination justify-content-center d-flex">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a href="#" class="page-link" aria-label="Previous">
+                                            <i class="ti-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link" aria-label="Next">
+                                            <i class="ti-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>

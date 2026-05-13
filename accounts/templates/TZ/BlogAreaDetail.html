@@ -1,0 +1,45 @@
+{% load static %}
+
+<section class="blog_area single-post-area section-padding">
+    <div class="container">
+        <div class="row">
+            {% if blogdetail %}
+                <div class="col-lg-8 posts-list mx-auto">
+                    <div class="single-post">
+                        <div class="feature-img">
+                            <img class="img-fluid" src="{{ blogdetail.BlogDeImage.url }}" alt="">
+                        </div>
+                       <div class="blog_details text-center">
+                            <h2>{{ blogdetail.BlogDeName }}</h2>
+                            <p class="excert">
+                                {{ blogdetail.BlogDeDescription|safe }}
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="navigation-top">
+                        <div class="d-sm-flex justify-content-between text-center align-items-center">
+                            <div class="rating-info">
+                                <span class="rating-stars">
+                                    {% for i in "12345" %}
+                                        {% if i|add:"0" <= blogdetail.BlogDeRate|default:"0"|add:"0" %}
+                                            <i class="fas fa-star text-warning"></i>
+                                        {% else %}
+                                            <i class="far fa-star text-warning"></i>
+                                        {% endif %}
+                                    {% endfor %}
+                                </span>
+                                <span class="rating-text">{{ blogdetail.BlogDeRate|default:"0" }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <p class="text-danger">Blog detail not found.</p>
+            {% endif %}
+
+            
+        </div>
+    </div>
+</section>

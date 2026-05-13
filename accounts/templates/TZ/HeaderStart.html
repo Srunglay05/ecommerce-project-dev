@@ -1,0 +1,68 @@
+{% load static %}
+
+ <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="menu-wrapper">
+                        <!-- Logo -->
+                        <div class="logo">
+                            {% if topBanner and topBanner.Logo %}
+                                <a href="{% url 'IndexTZ' %}">
+                                    <img src="{{ topBanner.Logo.url }}" alt="Logo" class="small-logo" style="width: 250px; height: auto;">
+                                </a>
+                            {% endif %}
+                        </div>
+
+                        <!-- Main-menu -->
+                       <div class="main-menu d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                {% for menu in Menus %}
+                                    {% if menu.sub_count > 0 %}
+                                    <li>
+                                        <a href="{{ menu.url }}">
+                                        {{ menu.MenuName }}
+                                        </a>
+                                        <ul class="submenu">
+                                        {% for submenu in menu.submenus.all %}
+                                            <li>
+                                            <a href="{{ submenu.url }}">
+                                                {{ submenu.SubMenuName }}
+                                            </a>
+                                            </li>
+                                        {% endfor %}
+                                        </ul>
+                                    </li>
+                                    {% else %}
+                                    <li>
+                                        <a href="{{ menu.url }}">
+                                        {{ menu.MenuName }}
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                {% endfor %}
+                                </ul>
+
+                            </nav>
+                        </div>
+
+                        <!-- Header Right -->
+                        <div class="header-right">
+                            <ul>
+                                <li>
+                                    <div class="nav-search search-switch">
+                                        <span class="flaticon-search"></span>
+                                    </div>
+                                </li>
+                                <li> <a href="{% url 'LoginTZ' %}"><span class="flaticon-user"></span></a></li>
+                                <li><a href="{% url 'CartTZ' %}"><span class="flaticon-shopping-cart"></span></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>

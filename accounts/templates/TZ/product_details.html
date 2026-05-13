@@ -1,0 +1,260 @@
+{% load static %}
+
+<!doctype html>
+<html lang="zxx">
+<head>
+    {% include 'TZ/head.html' %}
+    {% include 'TZ/CSS.html' %}
+    <style>
+        .single_product_img img {
+            max-width: 400px;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+        .product-details {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .price {
+            font-size: 24px;
+            color: #df3232;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        {% include 'TZ/HeaderStart.html' %}
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="slider-area">
+            <div class="single-slider slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap text-center">
+                                <h2>AMORE Product Details</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Detail Section -->
+        <div class="product_image_area py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <!-- Product Image -->
+            <div class="col-lg-6">
+                <div class="single_product_img">
+                    {% if prodetail.image %}
+                        <img src="{{ prodetail.image.url }}" alt="{{ prodetail.ProDeName }}">
+                    {% else %}
+                       
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="col-lg-8 product-details">
+                {% if prodetail.ProDeImage %}
+                <div class="single_product_img">
+                    <img src="{{ prodetail.ProDeImage.url }}" alt="{{ prodetail.ProDeName }}">
+                </div>
+                {% endif %}
+                <br>
+
+                <h2>{{ prodetail.ProDeName }}</h2>
+                
+                <p class="price">${{ prodetail.ProDePrice|floatformat:2 }}</p>
+
+                <div>{{ prodetail.Pro_detail_description_1|safe }}</div>
+                <br>
+                <div>{{ prodetail.Pro_detail_description_2|safe }}</div>
+
+                <!-- Add to Cart Form -->
+                <!-- Product List -->
+        {% if prodetail.ProListID %}
+            <form method="post" action="{% url 'add_to_cart' 'list' prodetail.ProListID.id %}">
+                {% csrf_token %}
+                <div class="card_area mt-4">
+                    <div class="product_count_area">
+                        <p>Quantity</p>
+                        <div class="product_count d-inline-flex align-items-center">
+                            <span class="product_count_item inumber-decrement"><i class="ti-minus"></i></span>
+                            <input
+                                type="number"
+                                name="quantity"
+                                class="product_count_item input-number"
+                                value="1"
+                                min="1"
+                                max="10"
+                                step="1"
+                                data-price="{% if prodetail.ProDePrice %}{{ prodetail.ProDePrice|floatformat:2 }}{% else %}0{% endif %}">
+                            <span class="product_count_item inumber-increment"><i class="ti-plus"></i></span>
+                        </div>
+                        <span class="price_display ms-3" data-price="{% if prodetail.ProDePrice %}{{ prodetail.ProDePrice|floatformat:2 }}{% else %}0{% endif %}">
+                            Total Price: ${{ prodetail.ProDePrice|floatformat:2 }}
+                        </span>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn_3">Add to Cart</button>
+                </div>
+            </form>
+
+
+
+    <!-- Popular Item -->
+    <!-- Popular Item -->
+{% elif prodetail.popular_item_ID %}
+    <form method="post" action="{% url 'add_to_cart' 'popular' prodetail.popular_item_ID.id %}">
+        {% csrf_token %}
+        <div class="card_area mt-4">
+            <div class="product_count_area">
+                <p>Quantity</p>
+                <div class="product_count d-inline-flex align-items-center">
+                    <span class="product_count_item inumber-decrement"><i class="ti-minus"></i></span>
+                    <input
+                        type="number"
+                        name="quantity"
+                        class="product_count_item input-number"
+                        value="1"
+                        min="1"
+                        max="10"
+                        step="1"
+                        data-price="{% if prodetail.PopIPrice %}{{ prodetail.PopIPrice|floatformat:2 }}{% else %}0{% endif %}">
+                    <span class="product_count_item inumber-increment"><i class="ti-plus"></i></span>
+                </div>
+                <span class="price_display ms-3" data-price="{% if prodetail.PopIPrice %}{{ prodetail.PopIPrice|floatformat:2 }}{% else %}0{% endif %}">
+                    Total Price: $0.00
+                </span>
+            </div>
+            <br>
+            <button type="submit" class="btn_3">Add to Cart</button>
+        </div>
+    </form>
+
+
+<!-- New Arrival -->
+{% elif prodetail.new_arrival_ID %}
+    <form method="post" action="{% url 'add_to_cart' 'new' prodetail.new_arrival_ID.id %}">
+        {% csrf_token %}
+        <div class="card_area mt-4">
+            <div class="product_count_area">
+                <p>Quantity</p>
+                <div class="product_count d-inline-flex align-items-center">
+                    <span class="product_count_item inumber-decrement"><i class="ti-minus"></i></span>
+                    <input
+                        type="number"
+                        name="quantity"
+                        class="product_count_item input-number"
+                        value="1"
+                        min="1"
+                        max="10"
+                        step="1"
+                        data-price="{% if prodetail.NewAPrice %}{{ prodetail.NewAPrice|floatformat:2 }}{% else %}0{% endif %}">
+                    <span class="product_count_item inumber-increment"><i class="ti-plus"></i></span>
+                </div>
+                <span class="price_display ms-3" data-price="{% if prodetail.NewAPrice %}{{ prodetail.NewAPrice|floatformat:2 }}{% else %}0{% endif %}">
+                    Total Price: $0.00
+                </span>
+            </div>
+            <br>
+            <button type="submit" class="btn_3">Add to Cart</button>
+        </div>
+    </form>
+
+
+
+        {% else %}
+        <p>Product not available to add to cart.</p>
+        {% endif %}
+             
+
+
+
+
+
+
+
+                    
+                
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.card_area').forEach(card => {
+    const decrement = card.querySelector('.inumber-decrement');
+    const increment = card.querySelector('.inumber-increment');
+    const input = card.querySelector('.input-number');
+    const priceDisplay = card.querySelector('.price_display');
+
+    const unitPrice = parseFloat(input.dataset.price) || 0;
+
+    console.log('Card area found:', card);
+    console.log('Unit price:', unitPrice);
+
+    function updateTotal() {
+      let qty = parseInt(input.value);
+      if (isNaN(qty) || qty < 1) qty = 1;
+      if (qty > 10) qty = 10;
+      input.value = qty;
+
+      if (isNaN(unitPrice) || unitPrice <= 0) {
+        priceDisplay.textContent = "Total Price: $0.00";
+        return;
+      }
+      priceDisplay.textContent = `Total Price: $${(unitPrice * qty).toFixed(2)}`;
+    }
+
+    if (decrement) {
+      decrement.addEventListener('click', () => {
+        let qty = parseInt(input.value);
+        if (qty > 1) {
+          input.value = qty - 1;
+          updateTotal();
+        }
+      });
+    }
+    if (increment) {
+      increment.addEventListener('click', () => {
+        let qty = parseInt(input.value);
+        if (qty < 10) {
+          input.value = qty + 1;
+          updateTotal();
+        }
+      });
+    }
+
+    input.addEventListener('input', updateTotal);
+
+    // Call once on load to update total price immediately
+    updateTotal();
+  });
+});
+</script>
+
+
+    </main>
+
+    <footer>
+        {% include 'TZ/FooterStart.html' %}
+    </footer>
+
+    {% include 'TZ/SearchModelBegin.html' %}
+    {% include 'TZ/JShere.html' %}
+
+
+</body>
+</html>
