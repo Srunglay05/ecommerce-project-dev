@@ -1,0 +1,6082 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2025-07-29T08:22:45.752Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2025-07-29T08:22:51.959Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "amore",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2025-07-29T17:15:04.820Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "staff",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2025-07-29T17:15:08.997Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "staff",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2025-07-29T17:15:21.828Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "staff",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2025-07-29T17:15:57.844Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "staff",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2025-07-29T17:19:27.719Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "staff 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2025-07-29T17:19:41.178Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "Add",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2025-07-29T17:26:13.263Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "staff1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2025-07-29T17:27:49.940Z",
+    "user": 3,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "Add",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2025-07-29T17:29:47.192Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "staff1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2025-07-29T17:30:06.541Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "staff1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2025-07-29T17:30:50.396Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "staff2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2025-07-29T17:31:21.107Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "staff2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2025-07-29T17:32:30.439Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "staff3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2025-07-29T17:32:59.576Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "staff3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2025-07-29T17:36:43.667Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "staff3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2025-07-29T17:39:41.986Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "staff3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2025-07-30T08:03:44.714Z",
+    "user": 3,
+    "content_type": 30,
+    "object_id": "1",
+    "object_repr": "1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2025-07-30T08:17:24.754Z",
+    "user": 3,
+    "content_type": 25,
+    "object_id": "1",
+    "object_repr": "1 -> Lip Gloss ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2025-07-30T08:21:18.493Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "1 -> Mindful -> ProLImage/lipgloss_1.jpg ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2025-07-30T09:32:02.507Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "1 -> Mindful -> ProLImage/lipgloss_1.jpg ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2025-07-30T15:06:34.479Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "1 -> Mindful -> ProLImage/lipgloss_1_OfHwWBY.jpg ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProLImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2025-07-30T15:23:34.867Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "1 -> Mindful -> ProLImage/lipgloss_1_OfHwWBY.jpg ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2025-07-30T15:36:35.130Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "2",
+    "object_repr": "2 -> Radiant red -> ProLImage/lipgloss_2.jpg ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2025-07-30T15:42:38.287Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "3",
+    "object_repr": "3 -> Sigma -> ProLImage/lipgloss_3.jpg ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2025-07-31T08:04:58.397Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "4",
+    "object_repr": "4 -> Demure -> ProLImage/lipgloss_4.jpg ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2025-07-31T08:05:17.997Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "4",
+    "object_repr": "4 -> Demure -> ProLImage/lipgloss_4.jpg ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProLPrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2025-07-31T08:05:21.063Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "4",
+    "object_repr": "4 -> Demure -> ProLImage/lipgloss_4.jpg ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 151,
+  "fields": {
+    "action_time": "2025-07-31T08:05:23.568Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "3",
+    "object_repr": "3 -> Sigma -> ProLImage/lipgloss_3.jpg ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProLPrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 152,
+  "fields": {
+    "action_time": "2025-07-31T08:05:26.157Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "2",
+    "object_repr": "2 -> Radiant red -> ProLImage/lipgloss_2.jpg ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProLPrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 153,
+  "fields": {
+    "action_time": "2025-07-31T08:05:28.749Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "1 -> Mindful -> ProLImage/lipgloss_1_OfHwWBY.jpg ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProLPrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 154,
+  "fields": {
+    "action_time": "2025-07-31T08:09:11.571Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> Cuttsy  ProvideImage/lipgloss_6.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 155,
+  "fields": {
+    "action_time": "2025-07-31T08:13:13.387Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "2",
+    "object_repr": "2 -> Radiant Red -> ProLImage/lipgloss_2.jpg ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProLName\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 156,
+  "fields": {
+    "action_time": "2025-07-31T08:16:13.127Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> Cuttsy  ProvideImage/lipgloss_6.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 157,
+  "fields": {
+    "action_time": "2025-07-31T09:12:42.412Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> Cuttsy  ProvideImage/lipgloss_6.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 158,
+  "fields": {
+    "action_time": "2025-07-31T09:19:40.305Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "2",
+    "object_repr": "2 -> lipgloss  ProvideImage/lipgloss_5.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 159,
+  "fields": {
+    "action_time": "2025-07-31T09:20:13.797Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> Cuttsy  ProvideImage/lipgloss_6.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"NewAPrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 160,
+  "fields": {
+    "action_time": "2025-07-31T09:20:18.894Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "2",
+    "object_repr": "2 -> lipgloss  ProvideImage/lipgloss_5.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"NewAPrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 161,
+  "fields": {
+    "action_time": "2025-07-31T09:20:22.276Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> Cuttsy  ProvideImage/lipgloss_6.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 162,
+  "fields": {
+    "action_time": "2025-07-31T09:22:29.641Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "2",
+    "object_repr": "2 -> Uncensored & Demure  ProvideImage/photo_2025-07-15_23-58-58.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"NewAImage\", \"NewAName\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 163,
+  "fields": {
+    "action_time": "2025-07-31T09:23:18.150Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "3",
+    "object_repr": "3 -> Bare Sunscreen  ProvideImage/photo_2025-07-31_16-22-51.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 164,
+  "fields": {
+    "action_time": "2025-07-31T09:51:33.505Z",
+    "user": 3,
+    "content_type": 31,
+    "object_id": "1",
+    "object_repr": "amore168",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 165,
+  "fields": {
+    "action_time": "2025-08-01T05:36:45.188Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "4",
+    "object_repr": "4 -> Bare Sunscreen  ProvideImage/photo_2025-07-15_23-58-58_cNlifZN.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 166,
+  "fields": {
+    "action_time": "2025-08-01T05:37:03.064Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "4",
+    "object_repr": "4 -> Bare Sunscreen  ProvideImage/photo_2025-07-15_23-58-58_cNlifZN.jpg",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 167,
+  "fields": {
+    "action_time": "2025-08-01T06:31:46.268Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "staff3",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 168,
+  "fields": {
+    "action_time": "2025-08-01T07:36:35.888Z",
+    "user": 3,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "staff3",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 169,
+  "fields": {
+    "action_time": "2025-08-01T07:38:06.087Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> Amore Eyes brow set  ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"NewAImage\", \"NewAName\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 170,
+  "fields": {
+    "action_time": "2025-08-01T07:38:44.213Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "5",
+    "object_repr": "5 -> Amore Body Brush  ProvideImage/photo_2025-08-01_14-37-24.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 171,
+  "fields": {
+    "action_time": "2025-08-01T07:39:16.722Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "6",
+    "object_repr": "6 -> Shimmer Oil  ProvideImage/photo_2025-08-01_14-37-46.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 172,
+  "fields": {
+    "action_time": "2025-08-01T07:40:32.988Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "7",
+    "object_repr": "7 -> Blush  ProvideImage/photo_2025-08-01_14-39-46.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 173,
+  "fields": {
+    "action_time": "2025-08-01T07:55:57.098Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "1",
+    "object_repr": "1 -> Blush  ProvideImage/photo_2025-08-01_14-39-46_fhgcBBk.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 174,
+  "fields": {
+    "action_time": "2025-08-01T07:57:43.053Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "1",
+    "object_repr": "1 -> Blush  ProvideImage/photo_2025-08-01_14-39-46_fhgcBBk.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 175,
+  "fields": {
+    "action_time": "2025-08-01T07:59:49.053Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "2",
+    "object_repr": "2 -> Lip Gloss  ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 176,
+  "fields": {
+    "action_time": "2025-08-01T07:59:57.289Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "1",
+    "object_repr": "1 -> Blush  ProvideImage/photo_2025-08-01_14-39-46_fhgcBBk.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 177,
+  "fields": {
+    "action_time": "2025-08-01T08:04:43.540Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "2",
+    "object_repr": "2 -> Lip Gloss  ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 178,
+  "fields": {
+    "action_time": "2025-08-01T08:04:55.345Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "1",
+    "object_repr": "1 -> Blush  ProvideImage/photo_2025-08-01_14-39-46_fhgcBBk.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 179,
+  "fields": {
+    "action_time": "2025-08-01T08:05:09.366Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "2",
+    "object_repr": "2 -> Lip Gloss  ProvideImage/lipgloss_4.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"PopIImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 180,
+  "fields": {
+    "action_time": "2025-08-01T08:17:36.849Z",
+    "user": 3,
+    "content_type": 25,
+    "object_id": "2",
+    "object_repr": "2 -> Blush ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 181,
+  "fields": {
+    "action_time": "2025-08-01T08:18:00.476Z",
+    "user": 3,
+    "content_type": 25,
+    "object_id": "3",
+    "object_repr": "3 -> Amore Body Brush ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 182,
+  "fields": {
+    "action_time": "2025-08-01T08:18:10.422Z",
+    "user": 3,
+    "content_type": 25,
+    "object_id": "4",
+    "object_repr": "4 -> Shimmer Oil ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 183,
+  "fields": {
+    "action_time": "2025-08-01T08:18:25.040Z",
+    "user": 3,
+    "content_type": 25,
+    "object_id": "5",
+    "object_repr": "5 -> Lip Liner X Lip gloss set ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 184,
+  "fields": {
+    "action_time": "2025-08-01T08:18:34.212Z",
+    "user": 3,
+    "content_type": 25,
+    "object_id": "6",
+    "object_repr": "6 -> Amore Eyes brow set ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 185,
+  "fields": {
+    "action_time": "2025-08-01T08:18:41.407Z",
+    "user": 3,
+    "content_type": 25,
+    "object_id": "7",
+    "object_repr": "7 -> Bare Sunscreen ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 186,
+  "fields": {
+    "action_time": "2025-08-01T08:21:29.380Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 187,
+  "fields": {
+    "action_time": "2025-08-01T08:22:04.101Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 188,
+  "fields": {
+    "action_time": "2025-08-01T08:22:24.648Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "2",
+    "object_repr": "2 -> Slide 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 189,
+  "fields": {
+    "action_time": "2025-08-01T08:43:51.077Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 190,
+  "fields": {
+    "action_time": "2025-08-01T08:43:57.985Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "2",
+    "object_repr": "2 -> Slide 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 191,
+  "fields": {
+    "action_time": "2025-08-01T08:52:33.011Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SildeHead\", \"SlideBody\", \"SlideImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 192,
+  "fields": {
+    "action_time": "2025-08-01T09:03:06.300Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SildeHead\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 193,
+  "fields": {
+    "action_time": "2025-08-01T09:03:21.575Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "2",
+    "object_repr": "2 -> Slide 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 194,
+  "fields": {
+    "action_time": "2025-08-01T09:04:33.496Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 195,
+  "fields": {
+    "action_time": "2025-08-01T09:09:53.340Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideBody\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 196,
+  "fields": {
+    "action_time": "2025-08-01T09:11:46.282Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 197,
+  "fields": {
+    "action_time": "2025-08-01T09:15:37.985Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "6 -> Login",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 198,
+  "fields": {
+    "action_time": "2025-08-01T09:15:54.997Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "6 -> Login",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 199,
+  "fields": {
+    "action_time": "2025-08-01T09:18:17.043Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "1 -> About Us",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 200,
+  "fields": {
+    "action_time": "2025-08-01T09:18:56.311Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "7 -> Latest",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 201,
+  "fields": {
+    "action_time": "2025-08-01T09:23:06.403Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "6 -> Login",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 202,
+  "fields": {
+    "action_time": "2025-08-01T09:23:09.930Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "1 -> About Us",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 203,
+  "fields": {
+    "action_time": "2025-08-01T09:23:12.539Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "2 -> Contact Us",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 204,
+  "fields": {
+    "action_time": "2025-08-01T09:23:15.606Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "3 -> Promotion",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 205,
+  "fields": {
+    "action_time": "2025-08-01T09:23:18.266Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "4 -> Products",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 206,
+  "fields": {
+    "action_time": "2025-08-01T09:23:20.717Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "5 -> New product",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 207,
+  "fields": {
+    "action_time": "2025-08-01T09:23:24.999Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "7 -> Latest",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 208,
+  "fields": {
+    "action_time": "2025-08-01T09:23:35.339Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "8 -> Home",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 209,
+  "fields": {
+    "action_time": "2025-08-01T09:24:04.337Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "9 -> Shop",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 210,
+  "fields": {
+    "action_time": "2025-08-01T09:24:15.808Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "10 -> About",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 211,
+  "fields": {
+    "action_time": "2025-08-01T09:24:21.714Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "11 -> Latest",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 212,
+  "fields": {
+    "action_time": "2025-08-01T09:24:32.680Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "12 -> Blog",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 213,
+  "fields": {
+    "action_time": "2025-08-01T09:24:37.097Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "13 -> Contact",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 214,
+  "fields": {
+    "action_time": "2025-08-01T09:26:49.823Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "1",
+    "object_repr": "Latest -> Product List",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 215,
+  "fields": {
+    "action_time": "2025-08-01T09:27:00.634Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "2",
+    "object_repr": "Latest -> Product Detail",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 216,
+  "fields": {
+    "action_time": "2025-08-01T09:27:26.502Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "3",
+    "object_repr": "Blog -> Blog",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 217,
+  "fields": {
+    "action_time": "2025-08-01T09:27:43.695Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "4",
+    "object_repr": "Blog -> Blog Details",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 218,
+  "fields": {
+    "action_time": "2025-08-02T07:49:55.430Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "1",
+    "object_repr": "Latest -> Product List",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 219,
+  "fields": {
+    "action_time": "2025-08-02T15:05:02.305Z",
+    "user": 3,
+    "content_type": 30,
+    "object_id": "1",
+    "object_repr": "1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 220,
+  "fields": {
+    "action_time": "2025-08-02T15:06:02.906Z",
+    "user": 3,
+    "content_type": 30,
+    "object_id": "1",
+    "object_repr": "1 --> Logo/amorelogo_omUvtnp.png",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 221,
+  "fields": {
+    "action_time": "2025-08-02T15:22:09.554Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> 1 -> <h6><span style=\"color:#8e44ad\"><span style=\"font-size:18px\">Products Descri</span><span style=\"font-size:18px\">ption</span></span></h6>\r\n\r\n<p>Vestibulum ac diam sit amet quam vehicula eleme",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 222,
+  "fields": {
+    "action_time": "2025-08-02T15:22:17.057Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "6",
+    "object_repr": "6 -> 6 -> <h6><span style=\"color:#8e44ad\"><span style=\"font-size:16px\">Products Description</span></span></h6>\r\n\r\n<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 223,
+  "fields": {
+    "action_time": "2025-08-02T15:22:21.164Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> 5 -> <h6><span style=\"color:#8e44ad\"><span style=\"font-size:16px\">Products Description</span></span></h6>\r\n\r\n<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 224,
+  "fields": {
+    "action_time": "2025-08-02T15:22:24.253Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "4",
+    "object_repr": "4 -> 4 -> <h6><span style=\"color:#8e44ad\"><span style=\"font-size:16px\">Products Description</span></span></h6>\r\n\r\n<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 225,
+  "fields": {
+    "action_time": "2025-08-02T15:22:27.680Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "3 -> 3 -> <h6><span style=\"color:#8e44ad\"><span style=\"font-size:16px\">Products Description</span></span></h6>\r\n\r\n<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 226,
+  "fields": {
+    "action_time": "2025-08-02T15:22:30.646Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "2 -> 2 -> <h6><span style=\"color:#8e44ad\"><span style=\"font-size:16px\">Products&nbsp;Description</span></span></h6>\r\n\r\n<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellente",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 227,
+  "fields": {
+    "action_time": "2025-08-02T16:31:41.456Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> lip gloss",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 228,
+  "fields": {
+    "action_time": "2025-08-02T16:45:22.510Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> lip gloss",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 229,
+  "fields": {
+    "action_time": "2025-08-02T17:21:19.705Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> lip gloss",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProDePrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 230,
+  "fields": {
+    "action_time": "2025-08-03T06:46:55.825Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> lip gloss",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 231,
+  "fields": {
+    "action_time": "2025-08-03T07:08:00.093Z",
+    "user": 3,
+    "content_type": 25,
+    "object_id": "2",
+    "object_repr": "2 -> Blush ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 232,
+  "fields": {
+    "action_time": "2025-08-03T07:12:14.089Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "3",
+    "object_repr": "3 -> Dried Rose -> ProLImage/photo_2025-08-03_14-11-50.jpg ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\", \"ProLName\", \"ProLImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 233,
+  "fields": {
+    "action_time": "2025-08-03T07:12:52.779Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "4",
+    "object_repr": "4 -> Ripe Hawthorn -> ProLImage/photo_2025-08-03_14-11-50_NypKzrd.jpg ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\", \"ProLName\", \"ProLImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 234,
+  "fields": {
+    "action_time": "2025-08-03T07:27:46.510Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 235,
+  "fields": {
+    "action_time": "2025-08-03T07:29:22.123Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 236,
+  "fields": {
+    "action_time": "2025-08-03T07:32:03.637Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 237,
+  "fields": {
+    "action_time": "2025-08-03T07:34:28.533Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideBody\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 238,
+  "fields": {
+    "action_time": "2025-08-03T07:35:15.094Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideBody\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 239,
+  "fields": {
+    "action_time": "2025-08-03T07:35:42.513Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SildeHead\", \"SlideBody\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 240,
+  "fields": {
+    "action_time": "2025-08-03T07:38:20.442Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideBody\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 241,
+  "fields": {
+    "action_time": "2025-08-03T07:41:12.546Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "3",
+    "object_repr": "3 -> Slide 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 242,
+  "fields": {
+    "action_time": "2025-08-03T07:42:24.004Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "3",
+    "object_repr": "3 -> Slide 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 243,
+  "fields": {
+    "action_time": "2025-08-03T07:43:23.442Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "3",
+    "object_repr": "3 -> Shimmer Oil  ProvideImage/photo_2025-08-01_14-37-46_nji8ZuQ.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 244,
+  "fields": {
+    "action_time": "2025-08-03T07:52:00.456Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Home",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 245,
+  "fields": {
+    "action_time": "2025-08-03T07:52:21.289Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Home",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 246,
+  "fields": {
+    "action_time": "2025-08-03T07:52:46.036Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Shop",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 247,
+  "fields": {
+    "action_time": "2025-08-03T07:52:53.076Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "About",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 248,
+  "fields": {
+    "action_time": "2025-08-03T07:53:01.007Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Latest",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 249,
+  "fields": {
+    "action_time": "2025-08-03T07:53:17.989Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Blog",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 250,
+  "fields": {
+    "action_time": "2025-08-03T07:53:27.720Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Contact",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 251,
+  "fields": {
+    "action_time": "2025-08-03T07:53:54.023Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "1",
+    "object_repr": "Latest -> Product List",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 252,
+  "fields": {
+    "action_time": "2025-08-03T07:54:01.718Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "2",
+    "object_repr": "Latest -> Product Detail",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 253,
+  "fields": {
+    "action_time": "2025-08-03T07:54:10.551Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "3",
+    "object_repr": "Blog -> Blog",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 254,
+  "fields": {
+    "action_time": "2025-08-03T07:54:16.454Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "4",
+    "object_repr": "Blog -> Blog Details",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 255,
+  "fields": {
+    "action_time": "2025-08-03T07:55:02.289Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "1",
+    "object_repr": "Latest -> Product List",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 256,
+  "fields": {
+    "action_time": "2025-08-03T07:55:14.487Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "1",
+    "object_repr": "Latest -> Product List",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 257,
+  "fields": {
+    "action_time": "2025-08-03T07:55:25.712Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Shop",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 258,
+  "fields": {
+    "action_time": "2025-08-03T07:56:19.925Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "2",
+    "object_repr": "Latest -> Product Detail",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 259,
+  "fields": {
+    "action_time": "2025-08-03T07:58:33.187Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "2",
+    "object_repr": "Latest -> Product Detail",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 260,
+  "fields": {
+    "action_time": "2025-08-03T07:58:50.684Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "4",
+    "object_repr": "Blog -> Blog Details",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 261,
+  "fields": {
+    "action_time": "2025-08-03T08:03:33.159Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> lip gloss",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 262,
+  "fields": {
+    "action_time": "2025-08-03T08:04:10.643Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> lip gloss",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 263,
+  "fields": {
+    "action_time": "2025-08-03T08:04:30.250Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "2 -> sfd",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 264,
+  "fields": {
+    "action_time": "2025-08-03T08:12:00.294Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Shop",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 265,
+  "fields": {
+    "action_time": "2025-08-03T15:10:13.382Z",
+    "user": 3,
+    "content_type": 19,
+    "object_id": "1",
+    "object_repr": "1 -> Lip Gloss in Amore -> BlogImage/lipgloss_4.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 266,
+  "fields": {
+    "action_time": "2025-08-03T15:14:18.979Z",
+    "user": 3,
+    "content_type": 19,
+    "object_id": "2",
+    "object_repr": "2 -> Blush in Amore -> BlogImage/photo_2025-08-01_14-39-46.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 267,
+  "fields": {
+    "action_time": "2025-08-03T15:20:28.623Z",
+    "user": 3,
+    "content_type": 19,
+    "object_id": "3",
+    "object_repr": "3 -> Discover the Beauty of Amore Skincare: Korean Glow, Global Love -> BlogImage/download_1rHfZRn.jpeg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 268,
+  "fields": {
+    "action_time": "2025-08-04T00:45:45.251Z",
+    "user": 3,
+    "content_type": 35,
+    "object_id": "1",
+    "object_repr": "1 -> Lip Gloss in Amore -> BlogImage/lipgloss_4_hASEelR.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 269,
+  "fields": {
+    "action_time": "2025-08-04T00:47:19.514Z",
+    "user": 3,
+    "content_type": 35,
+    "object_id": "2",
+    "object_repr": "2 -> Blush in amore -> BlogImage/photo_2025-08-01_14-39-46_tfyizwp.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 270,
+  "fields": {
+    "action_time": "2025-08-04T01:00:25.987Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "8",
+    "object_repr": "8 -> AMORE LIP GLOSS SHIMMER  ProvideImage/amore-beauty-8284f1a0-8670-4788-8b1a-e480a58fc5d0.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 271,
+  "fields": {
+    "action_time": "2025-08-04T01:02:36.716Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "8",
+    "object_repr": "8 -> AMORE LIP GLOSS SHIMMER  ProvideImage/amore-beauty-8284f1a0-8670-4788-8b1a-e480a58fc5d0.jpg",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 272,
+  "fields": {
+    "action_time": "2025-08-04T01:04:21.822Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "4",
+    "object_repr": "4 -> AMORE LIP GLOSS SHIMMER  ProvideImage/amore-beauty-8284f1a0-8670-4788-8b1a-e480a58fc5d0_YxsUZAu.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 273,
+  "fields": {
+    "action_time": "2025-08-04T01:05:06.550Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "4",
+    "object_repr": "4 -> AMORE LIP GLOSS SHIMMER  ProvideImage/amore-beauty-8284f1a0-8670-4788-8b1a-e480a58fc5d0_YxsUZAu.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"PopIDescription\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 274,
+  "fields": {
+    "action_time": "2025-08-04T01:05:48.992Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "4",
+    "object_repr": "4 -> Amore Lip gloss Shimmer  ProvideImage/amore-beauty-8284f1a0-8670-4788-8b1a-e480a58fc5d0_YxsUZAu.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"PopIName\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 275,
+  "fields": {
+    "action_time": "2025-08-04T01:09:54.988Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "5",
+    "object_repr": "5 -> Amore Lip Line -> ProLImage/amore-beauty-90f69f3e-73c1-4ee4-989b-490151529ad8.jpg ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 276,
+  "fields": {
+    "action_time": "2025-08-04T01:10:56.589Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "6",
+    "object_repr": "6 -> Amore Brow kit -> ProLImage/amore-beauty-5a768c62-655b-428c-9e90-74f970d2c6e8.jpg ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 277,
+  "fields": {
+    "action_time": "2025-08-04T01:12:22.769Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "7",
+    "object_repr": "7 -> Uncensored & Demure -> ProLImage/photo_2025-07-15_23-58-58_rrc5wLl.jpg ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 278,
+  "fields": {
+    "action_time": "2025-08-04T01:14:06.684Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "8",
+    "object_repr": "8 -> Amore Body Brush -> ProLImage/photo_2025-08-01_14-37-24_Jdu22Vi.jpg ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 279,
+  "fields": {
+    "action_time": "2025-08-04T01:15:15.223Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "9",
+    "object_repr": "9 -> Shimmer Oil -> ProLImage/photo_2025-08-01_14-37-46.jpg ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 280,
+  "fields": {
+    "action_time": "2025-08-04T08:02:03.287Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Home",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 281,
+  "fields": {
+    "action_time": "2025-08-04T08:03:27.065Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "1 -> About Us",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 282,
+  "fields": {
+    "action_time": "2025-08-04T08:04:29.179Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "1 -> About Us",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 283,
+  "fields": {
+    "action_time": "2025-08-04T08:04:44.580Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "2",
+    "object_repr": "2 -> wrafdw",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 284,
+  "fields": {
+    "action_time": "2025-08-04T08:05:02.943Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "2",
+    "object_repr": "2 -> wrafdw",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 285,
+  "fields": {
+    "action_time": "2025-08-04T08:07:33.726Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "Footer object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 286,
+  "fields": {
+    "action_time": "2025-08-04T08:09:23.388Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "1 -> About Us",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 287,
+  "fields": {
+    "action_time": "2025-08-04T08:09:41.267Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "3",
+    "object_repr": "3 -> wrafdw",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 288,
+  "fields": {
+    "action_time": "2025-08-04T08:12:27.827Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "3",
+    "object_repr": "3 -> wrafdw",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 289,
+  "fields": {
+    "action_time": "2025-08-04T08:17:17.685Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "1 -> About Us",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 290,
+  "fields": {
+    "action_time": "2025-08-04T08:21:55.166Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "2 -> sfd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 291,
+  "fields": {
+    "action_time": "2025-08-04T08:22:05.440Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> lip gloss",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 292,
+  "fields": {
+    "action_time": "2025-08-04T08:23:12.848Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "3 -> lip gloss",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 293,
+  "fields": {
+    "action_time": "2025-08-04T08:24:57.029Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "1 -> About Us",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 294,
+  "fields": {
+    "action_time": "2025-08-04T08:25:20.832Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "4",
+    "object_repr": "4 -> Contact Us",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 295,
+  "fields": {
+    "action_time": "2025-08-04T08:31:10.843Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "1 -> About Us",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 296,
+  "fields": {
+    "action_time": "2025-08-04T08:31:13.669Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "4",
+    "object_repr": "4 -> Contact Us",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 297,
+  "fields": {
+    "action_time": "2025-08-04T08:38:25.109Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "Footer 1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 298,
+  "fields": {
+    "action_time": "2025-08-04T08:41:16.502Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "4",
+    "object_repr": "4 --> ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 299,
+  "fields": {
+    "action_time": "2025-08-04T08:41:41.924Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "1",
+    "object_repr": "About Us",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 300,
+  "fields": {
+    "action_time": "2025-08-04T08:42:10.018Z",
+    "user": 3,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE – Cambodia’s Most Trusted Beauty Brand -> <p>rtgerfefget</p> /n A Leading Local Beauty Brand with Global Standards -> <p>tgefdjki867uy5er</p>",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 301,
+  "fields": {
+    "action_time": "2025-08-04T09:29:15.553Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "2",
+    "object_repr": "Our Shop",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 302,
+  "fields": {
+    "action_time": "2025-08-04T09:29:34.949Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "3",
+    "object_repr": "Contact Us",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 303,
+  "fields": {
+    "action_time": "2025-08-04T09:35:03.565Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "2",
+    "object_repr": "2 -> Radiant Red -> ProLImage/lipgloss_2.jpg ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 304,
+  "fields": {
+    "action_time": "2025-08-04T09:35:19.447Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "4",
+    "object_repr": "4 -> Ripe Hawthorn -> ProLImage/photo_2025-08-03_14-11-50_NypKzrd.jpg ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 305,
+  "fields": {
+    "action_time": "2025-08-04T09:35:37.532Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "8",
+    "object_repr": "8 -> Amore Body Brush -> ProLImage/photo_2025-08-01_14-37-24_Jdu22Vi.jpg ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 306,
+  "fields": {
+    "action_time": "2025-08-04T17:35:06.637Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> lip gloss --> <p>owfheoiqwa</p>",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 307,
+  "fields": {
+    "action_time": "2025-08-04T17:45:24.799Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE BROW KIT --> <p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE BROW KIT&nbsp;</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;<em>Brow Fixer&mdas",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Popular item ID\", \"New arrival ID\", \"Pro detail image 1\", \"ProDeName\", \"Pro detail description\", \"ProDeDetail\", \"ProDeQuentity\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 308,
+  "fields": {
+    "action_time": "2025-08-04T17:52:04.684Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE BROW KIT  ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"NewAName\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 309,
+  "fields": {
+    "action_time": "2025-08-04T18:06:21.998Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "3 -> lip gloss --> <p>eagregf3f</p>",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 310,
+  "fields": {
+    "action_time": "2025-08-04T18:06:57.507Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE BROW KIT --> <p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE BROW KIT&nbsp;</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;<em>Brow Fixer&mdas",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Pro detail image 1\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 311,
+  "fields": {
+    "action_time": "2025-08-04T18:16:03.139Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE BROW KIT --> <p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE BROW KIT&nbsp;</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;<em>Brow Fixer&mdas",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 312,
+  "fields": {
+    "action_time": "2025-08-04T18:27:28.708Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE BROW KIT  ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"NewADescription\", \"NewADetail\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 313,
+  "fields": {
+    "action_time": "2025-08-04T18:27:39.641Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE BROW KIT  ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 314,
+  "fields": {
+    "action_time": "2025-08-04T18:32:04.799Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "2",
+    "object_repr": "2 -> Uncensored & Demure  ProvideImage/photo_2025-07-15_23-58-58.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\", \"NewADescription\", \"NewADetail\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 315,
+  "fields": {
+    "action_time": "2025-08-04T18:32:11.276Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE BROW KIT  ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 316,
+  "fields": {
+    "action_time": "2025-08-04T18:32:18.479Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "3",
+    "object_repr": "3 -> Bare Sunscreen  ProvideImage/photo_2025-07-31_16-22-51.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 317,
+  "fields": {
+    "action_time": "2025-08-04T19:54:04.907Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "1 -> Mindful -> ProLImage/lipgloss_1_nbr4j7D.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProLImage\", \"ProLDescription\", \"ProLDetail\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 318,
+  "fields": {
+    "action_time": "2025-08-04T19:54:35.313Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "1 -> Mindful -> ProLImage/lipgloss_1_nbr4j7D.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 319,
+  "fields": {
+    "action_time": "2025-08-05T02:30:34.434Z",
+    "user": 3,
+    "content_type": 38,
+    "object_id": "1",
+    "object_repr": "Mindful x 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 320,
+  "fields": {
+    "action_time": "2025-08-05T04:01:33.407Z",
+    "user": 3,
+    "content_type": 38,
+    "object_id": "4",
+    "object_repr": "Amore Brow kit x 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 321,
+  "fields": {
+    "action_time": "2025-08-05T04:03:38.623Z",
+    "user": 3,
+    "content_type": 38,
+    "object_id": "4",
+    "object_repr": "Amore Brow kit x 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 322,
+  "fields": {
+    "action_time": "2025-08-05T04:04:05.092Z",
+    "user": 3,
+    "content_type": 38,
+    "object_id": "3",
+    "object_repr": "Dried Rose x 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 323,
+  "fields": {
+    "action_time": "2025-08-06T15:57:10.573Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "1 --> footer_images/amorelogo.png",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 324,
+  "fields": {
+    "action_time": "2025-08-06T15:58:52.080Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "4",
+    "object_repr": "Blog -> Blog Details",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 325,
+  "fields": {
+    "action_time": "2025-08-06T16:00:11.198Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "3",
+    "object_repr": "Blog -> Blog List",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SubMenuName\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 326,
+  "fields": {
+    "action_time": "2025-08-06T16:00:34.462Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "4",
+    "object_repr": "Blog -> Blog Details",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 327,
+  "fields": {
+    "action_time": "2025-08-06T16:12:12.454Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "4",
+    "object_repr": "Blog -> Blog Details",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 328,
+  "fields": {
+    "action_time": "2025-08-06T16:12:35.289Z",
+    "user": 3,
+    "content_type": 29,
+    "object_id": "4",
+    "object_repr": "Blog -> Blog Details",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 329,
+  "fields": {
+    "action_time": "2025-08-07T16:48:06.199Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SildeHead\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 330,
+  "fields": {
+    "action_time": "2025-08-07T16:48:29.204Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SildeHead\", \"SlideBody\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 331,
+  "fields": {
+    "action_time": "2025-08-07T17:09:26.997Z",
+    "user": 3,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE – Cambodia’s Most Trusted Beauty Brand -> <p>Founded with passion and purpose, AMORE Beauty is a proudly Cambodian brand committed to redefining skincare with high-quality, affordable, and ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description 1\", \"Description 2\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 332,
+  "fields": {
+    "action_time": "2025-08-07T17:09:58.798Z",
+    "user": 3,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE – Cambodia’s Most Trusted Beauty Brand -> <p><span style=\"font-size:24px\">Founded with passion and purpose, AMORE Beauty is a proudly Cambodian brand committed to redefining skincare with h",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description 1\", \"Description 2\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 333,
+  "fields": {
+    "action_time": "2025-08-07T17:10:51.895Z",
+    "user": 3,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE – Cambodia’s Most Trusted Beauty Brand -> <p><span style=\"font-size:22px\">Founded with passion and purpose, AMORE Beauty is a proudly Cambodian brand committed to redefining skincare with h",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description 1\", \"Description 2\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 334,
+  "fields": {
+    "action_time": "2025-08-07T17:15:42.907Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "1 --> footer_images/amorelogo.png",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 335,
+  "fields": {
+    "action_time": "2025-08-07T17:15:53Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "1",
+    "object_repr": "About Us",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 336,
+  "fields": {
+    "action_time": "2025-08-07T17:20:00.974Z",
+    "user": 3,
+    "content_type": 30,
+    "object_id": "1",
+    "object_repr": "1 --> Logo/amorelogo_omUvtnp.png",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 337,
+  "fields": {
+    "action_time": "2025-08-07T17:20:13.601Z",
+    "user": 3,
+    "content_type": 30,
+    "object_id": "1",
+    "object_repr": "1 --> Logo/photo_2025-07-15_23-57-17.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 338,
+  "fields": {
+    "action_time": "2025-08-07T17:20:31.847Z",
+    "user": 3,
+    "content_type": 30,
+    "object_id": "1",
+    "object_repr": "1 --> Logo/amorelogo_sU41zB9.png",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 339,
+  "fields": {
+    "action_time": "2025-08-07T17:46:32.204Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Category",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"MenuName\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 340,
+  "fields": {
+    "action_time": "2025-08-07T17:59:11.243Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE BROW KIT --> <p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE BROW KIT&nbsp;</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;<em>Brow Fixer&mdas",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 341,
+  "fields": {
+    "action_time": "2025-08-07T17:59:28.181Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "ProductList object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 342,
+  "fields": {
+    "action_time": "2025-08-08T15:59:28.913Z",
+    "user": 3,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Latest",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"MenuName\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 343,
+  "fields": {
+    "action_time": "2025-08-08T16:14:33.011Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "4",
+    "object_repr": "4 -> Slide 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 344,
+  "fields": {
+    "action_time": "2025-08-08T16:17:15.069Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "4",
+    "object_repr": "4 -> Slide 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 345,
+  "fields": {
+    "action_time": "2025-08-08T16:22:02.243Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "4",
+    "object_repr": "4 -> Slide 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 346,
+  "fields": {
+    "action_time": "2025-08-08T16:22:38.951Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 347,
+  "fields": {
+    "action_time": "2025-08-08T16:22:53.522Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 348,
+  "fields": {
+    "action_time": "2025-08-08T16:23:00.320Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "4",
+    "object_repr": "4 -> Slide 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SildeHead\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 349,
+  "fields": {
+    "action_time": "2025-08-08T16:23:38.758Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 350,
+  "fields": {
+    "action_time": "2025-08-08T16:23:44.591Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "4",
+    "object_repr": "4 -> Slide 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideBody\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 351,
+  "fields": {
+    "action_time": "2025-08-08T16:24:00.871Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "1",
+    "object_repr": "1 -> Slide 1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 352,
+  "fields": {
+    "action_time": "2025-08-08T16:24:07.494Z",
+    "user": 3,
+    "content_type": 28,
+    "object_id": "4",
+    "object_repr": "4 -> Slide 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"SlideBody\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 353,
+  "fields": {
+    "action_time": "2025-08-08T16:37:15.560Z",
+    "user": 3,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "1 Slide",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 354,
+  "fields": {
+    "action_time": "2025-08-08T16:37:18.727Z",
+    "user": 3,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Banner Slide",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 355,
+  "fields": {
+    "action_time": "2025-08-08T16:54:58.546Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "1",
+    "object_repr": "1 -> Gallery/gallery01.png -->  ->  -> ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 356,
+  "fields": {
+    "action_time": "2025-08-08T17:01:57.707Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "2",
+    "object_repr": "2 -> ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 357,
+  "fields": {
+    "action_time": "2025-08-08T17:02:01.169Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "1",
+    "object_repr": "1 -> Gallery/gallery01.png",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 358,
+  "fields": {
+    "action_time": "2025-08-08T17:02:03.959Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "2",
+    "object_repr": "2 -> ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 359,
+  "fields": {
+    "action_time": "2025-08-08T17:02:11.788Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "3",
+    "object_repr": "3 -> Gallery/gallery4.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 360,
+  "fields": {
+    "action_time": "2025-08-08T17:12:23.379Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "3",
+    "object_repr": "3 -> Gallery/Screenshot_2025-08-09_001009.png",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"GallImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 361,
+  "fields": {
+    "action_time": "2025-08-08T17:12:40.803Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "3",
+    "object_repr": "3 -> Gallery/Screenshot_2025-08-09_001019.png",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"GallImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 362,
+  "fields": {
+    "action_time": "2025-08-08T17:12:52.508Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "3",
+    "object_repr": "3 -> Gallery/Screenshot_2025-08-09_001019.png",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 363,
+  "fields": {
+    "action_time": "2025-08-08T17:13:11.371Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "4",
+    "object_repr": "4 -> Gallery/Screenshot_2025-08-09_001150.png",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 364,
+  "fields": {
+    "action_time": "2025-08-08T17:16:02.468Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "4",
+    "object_repr": "4 -> Gallery/515437198_18287367907252648_4650140044130850586_n.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"GallImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 365,
+  "fields": {
+    "action_time": "2025-08-08T17:16:50.350Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "5",
+    "object_repr": "5 -> Gallery/514989788_18287367898252648_7101958637876858596_n.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 366,
+  "fields": {
+    "action_time": "2025-08-08T17:18:15.739Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "5",
+    "object_repr": "5 -> Gallery/514989788_18287367898252648_7101958637876858596_n_O3LXW1J.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"GallImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 367,
+  "fields": {
+    "action_time": "2025-08-08T17:19:02.498Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "6",
+    "object_repr": "6 -> Gallery/Screenshot_2025-08-09_001150_pLi08bm.png",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 368,
+  "fields": {
+    "action_time": "2025-08-08T17:20:21.936Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "5",
+    "object_repr": "5 -> Gallery/515437198_18287367907252648_4650140044130850586_n_-_Copy.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"GallImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 369,
+  "fields": {
+    "action_time": "2025-08-08T17:20:34.654Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "6",
+    "object_repr": "6 -> Gallery/Screenshot_2025-08-09_001150_pLi08bm.png",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 370,
+  "fields": {
+    "action_time": "2025-08-08T17:20:44.332Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "4",
+    "object_repr": "4 -> Gallery/515437198_18287367907252648_4650140044130850586_n_-_Copy_ysxD5dJ.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"GallImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 371,
+  "fields": {
+    "action_time": "2025-08-08T17:21:06.754Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "5",
+    "object_repr": "5 -> Gallery/514989788_18287367898252648_7101958637876858596_n_-_Copy.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"GallImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 372,
+  "fields": {
+    "action_time": "2025-08-08T17:21:20.482Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "6",
+    "object_repr": "6 -> Gallery/Screenshot_2025-08-03_144016-removebg-preview.png",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"GallImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 373,
+  "fields": {
+    "action_time": "2025-08-08T17:29:34.711Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "6",
+    "object_repr": "6 -> Gallery/Screenshot_2025-08-09_002842.png",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"GallImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 374,
+  "fields": {
+    "action_time": "2025-08-08T17:31:22.820Z",
+    "user": 3,
+    "content_type": 39,
+    "object_id": "6",
+    "object_repr": "6 -> Gallery/Screenshot_2025-08-09_002842_BVGMcri.png",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"GallImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 375,
+  "fields": {
+    "action_time": "2025-08-08T17:43:39.926Z",
+    "user": 3,
+    "content_type": 22,
+    "object_id": "1",
+    "object_repr": "1 --> footer_images/amorelogo.png",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 376,
+  "fields": {
+    "action_time": "2025-08-08T18:00:38.206Z",
+    "user": 3,
+    "content_type": 40,
+    "object_id": "1",
+    "object_repr": "1 -> Introduction -> <p><strong>AMORE Beauty</strong>&nbsp;(&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is a locally owned beauty brand in Cambodia. We are committed to protecting the privacy ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 377,
+  "fields": {
+    "action_time": "2025-08-09T06:03:25.708Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "1",
+    "object_repr": "About Us",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 378,
+  "fields": {
+    "action_time": "2025-08-09T06:03:27.404Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "2",
+    "object_repr": "Our Shop",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 379,
+  "fields": {
+    "action_time": "2025-08-09T06:03:29.178Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "3",
+    "object_repr": "Contact Us",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 380,
+  "fields": {
+    "action_time": "2025-08-09T06:04:29.609Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "2",
+    "object_repr": "My Account",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 381,
+  "fields": {
+    "action_time": "2025-08-09T06:05:16.954Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "3",
+    "object_repr": "My Cart",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 382,
+  "fields": {
+    "action_time": "2025-08-09T06:05:42.489Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "4",
+    "object_repr": "Contact Us",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 383,
+  "fields": {
+    "action_time": "2025-08-09T06:05:58.139Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "5",
+    "object_repr": "dhfa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 384,
+  "fields": {
+    "action_time": "2025-08-09T06:10:00.267Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "5",
+    "object_repr": "About Us",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 385,
+  "fields": {
+    "action_time": "2025-08-09T06:10:11.534Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "3",
+    "object_repr": "My Cart",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 386,
+  "fields": {
+    "action_time": "2025-08-09T06:31:51.855Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "5",
+    "object_repr": "My Cart",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 387,
+  "fields": {
+    "action_time": "2025-08-09T06:32:22.070Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "5",
+    "object_repr": "My Account",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 388,
+  "fields": {
+    "action_time": "2025-08-09T06:32:54.537Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "2",
+    "object_repr": "My Account",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 389,
+  "fields": {
+    "action_time": "2025-08-09T06:33:18.637Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "5",
+    "object_repr": "Shop",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Url name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 390,
+  "fields": {
+    "action_time": "2025-08-09T06:33:38.787Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "6",
+    "object_repr": "My Account",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 391,
+  "fields": {
+    "action_time": "2025-08-09T06:34:12.447Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "7",
+    "object_repr": "My Cart",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 392,
+  "fields": {
+    "action_time": "2025-08-09T06:34:35.915Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "8",
+    "object_repr": "Privacy & Policy",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 393,
+  "fields": {
+    "action_time": "2025-08-09T06:34:55.287Z",
+    "user": 3,
+    "content_type": 37,
+    "object_id": "8",
+    "object_repr": "Privacy & Policy",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 394,
+  "fields": {
+    "action_time": "2025-08-09T07:03:08.110Z",
+    "user": 3,
+    "content_type": 25,
+    "object_id": "8",
+    "object_repr": "8 -> iMac 2025",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 395,
+  "fields": {
+    "action_time": "2025-08-09T07:03:17.700Z",
+    "user": 3,
+    "content_type": 25,
+    "object_id": "3",
+    "object_repr": "3 -> Amore Body Brush",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 396,
+  "fields": {
+    "action_time": "2025-08-09T07:03:29.054Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "ProductList object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 397,
+  "fields": {
+    "action_time": "2025-08-09T07:45:42.809Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "ProductList object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 398,
+  "fields": {
+    "action_time": "2025-08-09T07:45:49.849Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "ProductList object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 399,
+  "fields": {
+    "action_time": "2025-08-09T07:46:21.187Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "ProductList object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 400,
+  "fields": {
+    "action_time": "2025-08-09T07:46:36.867Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "ProductList object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 401,
+  "fields": {
+    "action_time": "2025-08-09T07:47:39.884Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "1 -> Mindful --> ProLImage/lipgloss_1_nbr4j7D.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 402,
+  "fields": {
+    "action_time": "2025-08-09T08:28:19.221Z",
+    "user": 3,
+    "content_type": 25,
+    "object_id": "5",
+    "object_repr": "5 -> Lip Liner X Lip gloss set",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 403,
+  "fields": {
+    "action_time": "2025-08-09T08:28:35.575Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "10",
+    "object_repr": "10 -> Dried Rose --> ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 404,
+  "fields": {
+    "action_time": "2025-08-09T16:37:22.011Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "NewArrivals object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"NewAPrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 405,
+  "fields": {
+    "action_time": "2025-08-09T16:44:17.487Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE BROW KIT --> <p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE BROW KIT&nbsp;</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;<em>Brow Fixer&mdas",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 406,
+  "fields": {
+    "action_time": "2025-08-09T16:44:22.767Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "1 -> AMORE BROW KIT --> <p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE BROW KIT&nbsp;</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;<em>Brow Fixer&mdas",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 407,
+  "fields": {
+    "action_time": "2025-08-09T16:46:13.652Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "4",
+    "object_repr": "4 -> sfd --> <p>sfqf</p>",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 408,
+  "fields": {
+    "action_time": "2025-08-09T16:47:20.855Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "4",
+    "object_repr": "4 -> sfd --> <p>sfqf</p>",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 409,
+  "fields": {
+    "action_time": "2025-08-09T17:06:34.341Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> None ->   ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 410,
+  "fields": {
+    "action_time": "2025-08-09T17:11:29.642Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "1",
+    "object_repr": "1 -> 2 -> Blush --> Blush --> ProvideImage/photo_2025-08-01_14-39-46_fhgcBBk.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 411,
+  "fields": {
+    "action_time": "2025-08-09T17:11:41.752Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "2",
+    "object_repr": "2 -> 1 -> Lip Gloss --> Lip Gloss --> ProvideImage/lipgloss_4.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 412,
+  "fields": {
+    "action_time": "2025-08-09T17:11:46.568Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "3",
+    "object_repr": "3 -> 4 -> Shimmer Oil --> Shimmer Oil --> ProvideImage/photo_2025-08-01_14-37-46_nji8ZuQ.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 413,
+  "fields": {
+    "action_time": "2025-08-09T17:11:54.083Z",
+    "user": 3,
+    "content_type": 24,
+    "object_id": "4",
+    "object_repr": "4 -> 1 -> Lip Gloss --> Amore Lip gloss Shimmer --> ProvideImage/amore-beauty-8284f1a0-8670-4788-8b1a-e480a58fc5d0_YxsUZAu.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 414,
+  "fields": {
+    "action_time": "2025-08-09T17:12:21.430Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> 6 -> Amore Eyes brow set --> AMORE BROW KIT --> ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 415,
+  "fields": {
+    "action_time": "2025-08-09T17:12:28.500Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "5",
+    "object_repr": "5 -> 3 -> Amore Body Brush --> Amore Body Brush --> ProvideImage/photo_2025-08-01_14-37-24.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 416,
+  "fields": {
+    "action_time": "2025-08-09T17:12:32.590Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "6",
+    "object_repr": "6 -> 4 -> Shimmer Oil --> Shimmer Oil --> ProvideImage/photo_2025-08-01_14-37-46.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 417,
+  "fields": {
+    "action_time": "2025-08-09T17:12:38.050Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "7",
+    "object_repr": "7 -> 2 -> Blush --> Blush --> ProvideImage/photo_2025-08-01_14-39-46.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 418,
+  "fields": {
+    "action_time": "2025-08-09T17:13:07.474Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> <p>yyy</p>  ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"New arrival ID\", \"ProDeName\", \"Pro detail description 1\", \"Pro detail description 2\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 419,
+  "fields": {
+    "action_time": "2025-08-09T17:14:28.060Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> <p>yyy</p>  ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 420,
+  "fields": {
+    "action_time": "2025-08-09T17:16:00.094Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> <p>yyy</p>  ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 421,
+  "fields": {
+    "action_time": "2025-08-09T17:35:53.677Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> 6 -> Amore Eyes brow set --> AMORE BROW KIT --> ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 422,
+  "fields": {
+    "action_time": "2025-08-09T17:37:55.374Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 12 -> <p>yyy</p>",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProDePrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 423,
+  "fields": {
+    "action_time": "2025-08-09T17:50:13.068Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 12.00 -> <p>yyy</p>",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 424,
+  "fields": {
+    "action_time": "2025-08-09T17:50:19.308Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 12.00 -> <p>yyy</p>",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Pro detail description 2\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 425,
+  "fields": {
+    "action_time": "2025-08-09T17:51:02.798Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> 6 -> Amore Eyes brow set --> AMORE BROW KIT --> ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 426,
+  "fields": {
+    "action_time": "2025-08-09T17:54:53.767Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> 6 -> Amore Eyes brow set --> AMORE BROW KIT --> ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 427,
+  "fields": {
+    "action_time": "2025-08-09T17:54:57.101Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "2",
+    "object_repr": "2 -> 5 -> Lip Liner X Lip gloss set --> Uncensored & Demure --> ProvideImage/photo_2025-07-15_23-58-58.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 428,
+  "fields": {
+    "action_time": "2025-08-09T17:55:32.156Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 12.00 -> <p>yyy</p>",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Pro detail description 2\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 429,
+  "fields": {
+    "action_time": "2025-08-09T18:02:02.852Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 12.00 -> <p>yyy</p>",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 430,
+  "fields": {
+    "action_time": "2025-08-09T18:11:27.331Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 12 -> <p>yyy</p>",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 431,
+  "fields": {
+    "action_time": "2025-08-09T18:17:45.500Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 6 -> <p>yyy</p>",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProDePrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 432,
+  "fields": {
+    "action_time": "2025-08-09T18:19:40.860Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> 6 -> Amore Eyes brow set --> AMORE BROW KIT --> ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 433,
+  "fields": {
+    "action_time": "2025-08-09T18:19:50.477Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 6.00 -> <p>yyy</p>",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProDeImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 434,
+  "fields": {
+    "action_time": "2025-08-09T18:21:49.131Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "6",
+    "object_repr": "6 -> sfd -> 7777 -> <p>45ye</p>",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 435,
+  "fields": {
+    "action_time": "2025-08-09T18:27:13.401Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "6",
+    "object_repr": "6 -> sfd -> 7777.00 -> <p>45ye</p>",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 436,
+  "fields": {
+    "action_time": "2025-08-09T18:28:42.725Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 12 -> <p>This BROW KIT contain 1 brow fixer gel, 1 brow cream, and 1 brow pencil. The rich color drawn a perfect &amp; natural looking eyebrows.</p>",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProDePrice\", \"Pro detail description 1\", \"Pro detail description 2\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 437,
+  "fields": {
+    "action_time": "2025-08-09T18:50:39.481Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 12.00 -> <p>This BROW KIT contain 1 brow fixer gel, 1 brow cream, and 1 brow pencil. The rich color drawn a perfect &amp; natural looking eyebrows.</p>",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 438,
+  "fields": {
+    "action_time": "2025-08-09T18:54:27.495Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 13 -> <p>This BROW KIT contain 1 brow fixer gel, 1 brow cream, and 1 brow pencil. The rich color drawn a perfect &amp; natural looking eyebrows.</p>",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProDePrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 439,
+  "fields": {
+    "action_time": "2025-08-09T19:38:40.278Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 13.00 -> <p>This BROW KIT contain 1 brow fixer gel, 1 brow cream, and 1 brow pencil. The rich color drawn a perfect &amp; natural looking eyebrows.</p>",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProDeImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 440,
+  "fields": {
+    "action_time": "2025-08-10T07:43:35.081Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "5",
+    "object_repr": "5 -> AMORE BROW KIT -> 13.00 -> <p>This BROW KIT contain 1 brow fixer gel, 1 brow cream, and 1 brow pencil. The rich color drawn a perfect &amp; natural looking eyebrows.</p>",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 441,
+  "fields": {
+    "action_time": "2025-08-10T07:48:05.669Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "7",
+    "object_repr": "7 -> Uncensored & Demure -> 12 -> <p>AMORE LIP GLOSS shine everyday. This Smooth, non-sticky gloss gives your lip a pretty glow and soft shimmer perfect for everyday use and&nbsp;&nbsp;AMORE Lip liner",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 442,
+  "fields": {
+    "action_time": "2025-08-10T08:00:39.874Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "8",
+    "object_repr": "8 -> Bare Sunscreen -> 35 -> <p>Multi-award-winning. Korea&rsquo;s bestselling sunscreen for years.<br />\r\nThis moisturizing sunscreen offers powerful SPF 45+ broad-spectrum protection from harmful UV",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 443,
+  "fields": {
+    "action_time": "2025-08-10T08:13:15.034Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "8",
+    "object_repr": "8 -> Bare Sunscreen -> 35.00 -> <p>Multi-award-winning. Korea&rsquo;s bestselling sunscreen for years.<br />\r\nThis moisturizing sunscreen offers powerful SPF 45+ broad-spectrum protection from harmful",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Pro detail description 2\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 444,
+  "fields": {
+    "action_time": "2025-08-10T08:14:03.451Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "8",
+    "object_repr": "8 -> Bare Sunscreen -> 35.00 -> <p>Multi-award-winning. Korea&rsquo;s bestselling sunscreen for years.<br />\r\nThis moisturizing sunscreen offers powerful SPF 45+ broad-spectrum protection from harmful",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Pro detail description 1\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 445,
+  "fields": {
+    "action_time": "2025-08-10T08:15:50.691Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "9",
+    "object_repr": "9 -> Amore Body Brush -> 12 -> <p>- Brushes (especially dense, fluffy ones) help distribute product efficiently, making it easier to cover large areas like arms, legs, and shoulders. - Using a brush k",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 446,
+  "fields": {
+    "action_time": "2025-08-10T14:09:33.385Z",
+    "user": 3,
+    "content_type": 23,
+    "object_id": "1",
+    "object_repr": "1 -> 6 -> Amore Eyes brow set --> AMORE BROW KIT --> ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 447,
+  "fields": {
+    "action_time": "2025-08-10T15:50:01.892Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "3",
+    "object_repr": "Dried Rose",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 448,
+  "fields": {
+    "action_time": "2025-08-10T15:50:30.589Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "5",
+    "object_repr": "Amore Lip Line",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 449,
+  "fields": {
+    "action_time": "2025-08-10T15:50:37.728Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "Mindful",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 450,
+  "fields": {
+    "action_time": "2025-08-10T15:50:41.571Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "3",
+    "object_repr": "Dried Rose",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 451,
+  "fields": {
+    "action_time": "2025-08-10T15:52:01.895Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "5",
+    "object_repr": "Sigma",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\", \"ProLName\", \"ProLImage\", \"ProLPrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 452,
+  "fields": {
+    "action_time": "2025-08-10T15:52:37.934Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "6",
+    "object_repr": "Demure",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\", \"ProLName\", \"ProLImage\", \"ProLPrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 453,
+  "fields": {
+    "action_time": "2025-08-10T15:53:54.541Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "7",
+    "object_repr": "Cutesy",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\", \"ProLName\", \"ProLImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 454,
+  "fields": {
+    "action_time": "2025-08-10T15:55:20.916Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "9",
+    "object_repr": "Radiant Red",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\", \"ProLName\", \"ProLImage\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 455,
+  "fields": {
+    "action_time": "2025-08-10T15:56:14.091Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "10",
+    "object_repr": "Ripe Hawthorn",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ProCategoryID\", \"ProLName\", \"ProLImage\", \"ProLPrice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 456,
+  "fields": {
+    "action_time": "2025-08-10T15:57:01.748Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "11",
+    "object_repr": "Sweet Peach",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 457,
+  "fields": {
+    "action_time": "2025-08-10T15:57:29.582Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "12",
+    "object_repr": "Cappuccino",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 458,
+  "fields": {
+    "action_time": "2025-08-10T15:58:18.084Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "13",
+    "object_repr": "Peachy",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 459,
+  "fields": {
+    "action_time": "2025-08-10T16:01:57.286Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "10",
+    "object_repr": "10 -> Mindful -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 460,
+  "fields": {
+    "action_time": "2025-08-10T16:06:26.331Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "10",
+    "object_repr": "10 -> Mindful -> 12.00",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 461,
+  "fields": {
+    "action_time": "2025-08-10T16:10:25.938Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "10",
+    "object_repr": "10 -> Mindful -> 12.00",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 462,
+  "fields": {
+    "action_time": "2025-08-10T16:33:09.599Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "10",
+    "object_repr": "10 -> Mindful -> 12.00",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 463,
+  "fields": {
+    "action_time": "2025-08-10T16:33:34.919Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "Mindful",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 464,
+  "fields": {
+    "action_time": "2025-08-10T16:33:44.841Z",
+    "user": 3,
+    "content_type": 26,
+    "object_id": "1",
+    "object_repr": "Mindful",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 465,
+  "fields": {
+    "action_time": "2025-08-10T17:17:07.521Z",
+    "user": 3,
+    "content_type": 35,
+    "object_id": "1",
+    "object_repr": "1 -> Lip Gloss in Amore -> BlogImage/lipgloss_4_hASEelR.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 466,
+  "fields": {
+    "action_time": "2025-08-10T17:17:10.152Z",
+    "user": 3,
+    "content_type": 35,
+    "object_id": "2",
+    "object_repr": "2 -> Blush in amore -> BlogImage/photo_2025-08-01_14-39-46_tfyizwp.jpg",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 467,
+  "fields": {
+    "action_time": "2025-08-10T17:20:17.772Z",
+    "user": 3,
+    "content_type": 21,
+    "object_id": "1",
+    "object_repr": "1 -> cambodia -> 0963259251 -> slett4921@gmail.com ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 468,
+  "fields": {
+    "action_time": "2025-08-10T17:26:40.988Z",
+    "user": 3,
+    "content_type": 21,
+    "object_id": "1",
+    "object_repr": "1 -> cambodia -> 0963259251 -> slett4921@gmail.com ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 469,
+  "fields": {
+    "action_time": "2025-08-10T17:31:12.733Z",
+    "user": 3,
+    "content_type": 21,
+    "object_id": "2",
+    "object_repr": "2 -> cambodia -> 0963259251 -> slett4921@gmail.com ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 470,
+  "fields": {
+    "action_time": "2025-08-10T17:33:49.144Z",
+    "user": 3,
+    "content_type": 21,
+    "object_id": "2",
+    "object_repr": "2 -> cambodia -> 0963259251 -> slett4921@gmail.com ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 471,
+  "fields": {
+    "action_time": "2025-08-10T17:33:54.416Z",
+    "user": 3,
+    "content_type": 21,
+    "object_id": "1",
+    "object_repr": "1 -> cambodia -> 0963259251 -> slett4921@gmail.com ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 472,
+  "fields": {
+    "action_time": "2025-08-10T17:34:24.808Z",
+    "user": 3,
+    "content_type": 21,
+    "object_id": "1",
+    "object_repr": "1 -> Cambodia -> None -> None ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Address\", \"PhoneNum\", \"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 473,
+  "fields": {
+    "action_time": "2025-08-10T17:34:55.566Z",
+    "user": 3,
+    "content_type": 21,
+    "object_id": "3",
+    "object_repr": "3 -> None -> 96 666 5133 -> None ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 474,
+  "fields": {
+    "action_time": "2025-08-10T17:36:46.439Z",
+    "user": 3,
+    "content_type": 21,
+    "object_id": "3",
+    "object_repr": "3 -> None -> 96 666 5133 -> None ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 475,
+  "fields": {
+    "action_time": "2025-08-10T17:37:17.069Z",
+    "user": 3,
+    "content_type": 21,
+    "object_id": "1",
+    "object_repr": "1 -> Cambodia -> 96 666 5133 -> info@amore-beauty.com ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description 2\", \"PhoneNum\", \"Description 3\", \"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 476,
+  "fields": {
+    "action_time": "2025-08-10T17:57:45.231Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "11",
+    "object_repr": "11 -> Blush -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 477,
+  "fields": {
+    "action_time": "2025-08-10T18:11:57.166Z",
+    "user": 3,
+    "content_type": 32,
+    "object_id": "1",
+    "object_repr": "AC ENG",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 478,
+  "fields": {
+    "action_time": "2025-08-10T18:12:09.242Z",
+    "user": 3,
+    "content_type": 32,
+    "object_id": "2",
+    "object_repr": "AC KH",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 479,
+  "fields": {
+    "action_time": "2025-08-11T16:41:30.327Z",
+    "user": 3,
+    "content_type": 33,
+    "object_id": "1",
+    "object_repr": "Order object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 480,
+  "fields": {
+    "action_time": "2025-08-11T16:41:37.434Z",
+    "user": 3,
+    "content_type": 33,
+    "object_id": "4",
+    "object_repr": "Order object (4)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CustomerName\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 481,
+  "fields": {
+    "action_time": "2025-08-11T16:42:05.257Z",
+    "user": 3,
+    "content_type": 33,
+    "object_id": "4",
+    "object_repr": "Order object (4)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"QRCodeInvoice\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 482,
+  "fields": {
+    "action_time": "2025-08-11T17:41:12.517Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "12",
+    "object_repr": "12 -> Shimmer Oil -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 483,
+  "fields": {
+    "action_time": "2025-08-11T17:42:07.879Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "13",
+    "object_repr": "13 -> Blush -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 484,
+  "fields": {
+    "action_time": "2025-08-11T17:44:39.258Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "14",
+    "object_repr": "14 -> Lip Gloss -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 485,
+  "fields": {
+    "action_time": "2025-08-11T17:46:29.059Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "15",
+    "object_repr": "15 -> Shimmer Oil -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 486,
+  "fields": {
+    "action_time": "2025-08-11T17:49:17.502Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "16",
+    "object_repr": "16 -> Amore Lip gloss Shimmer -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 487,
+  "fields": {
+    "action_time": "2025-08-11T17:51:04.024Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "17",
+    "object_repr": "17 -> Sigma -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 488,
+  "fields": {
+    "action_time": "2025-08-11T17:51:53.851Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "18",
+    "object_repr": "18 -> Demure -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 489,
+  "fields": {
+    "action_time": "2025-08-11T17:52:55.224Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "19",
+    "object_repr": "19 -> Dried Rose -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 490,
+  "fields": {
+    "action_time": "2025-08-11T17:53:41.422Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "20",
+    "object_repr": "20 -> Ripe Hawthorne -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 491,
+  "fields": {
+    "action_time": "2025-08-11T17:54:17.782Z",
+    "user": 3,
+    "content_type": 15,
+    "object_id": "21",
+    "object_repr": "21 -> Sweet Peach -> 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$OVN6jNezWIsMxjbMPBP12D$eAZGqHBnck1Z+ZpDmMV4zSJfk+lH2C19kG2a08DATHE=",
+    "last_login": "2025-08-06T15:46:15.415Z",
+    "is_superuser": true,
+    "username": "Amore",
+    "first_name": "",
+    "last_name": "",
+    "email": "amore@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-07-29T07:27:22.443Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$1VBR4MeOBR0RsTPa4VpK4k$dCV+4H2gQPmv7Pj5iw6OMgm7zb/GgUOi1BHJdeNsBd4=",
+    "last_login": "2025-08-01T06:29:18.851Z",
+    "is_superuser": false,
+    "username": "staff1",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-07-29T17:26:12Z",
+    "groups": [],
+    "user_permissions": [
+      69,
+      121,
+      73,
+      77,
+      61,
+      49,
+      81,
+      85,
+      37,
+      33,
+      29,
+      41,
+      89,
+      65,
+      129,
+      133,
+      93,
+      45,
+      97,
+      57,
+      53,
+      101,
+      105,
+      125,
+      109,
+      113,
+      25,
+      117
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$HVv3hrQ2nd3eXUXEZPm7Kn$NvD+Wgds0NGDW1rNDj2HzNXdhQniKJtfY7IyJp062MI=",
+    "last_login": "2025-08-01T06:29:48.215Z",
+    "is_superuser": false,
+    "username": "staff2",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-07-29T17:30:49Z",
+    "groups": [],
+    "user_permissions": [
+      72,
+      124,
+      76,
+      80,
+      64,
+      52,
+      84,
+      88,
+      40,
+      36,
+      32,
+      44,
+      92,
+      68,
+      132,
+      136,
+      96,
+      48,
+      100,
+      60,
+      56,
+      104,
+      108,
+      128,
+      112,
+      116,
+      28,
+      120
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$KtblJ4NaPDoGwdbyrwbkTe$OeXmHWCtphwlowoOO26epNv6/YYfb6YSysvQh7WsB30=",
+    "last_login": "2025-08-01T06:32:00Z",
+    "is_superuser": false,
+    "username": "staff3",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-07-29T17:32:29Z",
+    "groups": [],
+    "user_permissions": [
+      71,
+      123,
+      75,
+      79,
+      63,
+      51,
+      83,
+      87,
+      39,
+      35,
+      31,
+      43,
+      91,
+      67,
+      131,
+      135,
+      95,
+      47,
+      99,
+      59,
+      55,
+      103,
+      107,
+      127,
+      111,
+      115,
+      27,
+      119,
+      3,
+      19,
+      23
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$FqJylxPcjaucXSBFwTVV3Y$iu3/dtKMM0nU8QJi7Om8D2oxTrRAd+q6b3tgMHctn0U=",
+    "last_login": "2026-05-14T07:53:04.689Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-13T15:01:22.352Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$Qd6E3RgaJOMY4If6zpowCQ$vXhWRkXEIHnh9OJ8ZIWDpBFpnyV+HEfuX69Gpmxlc/4=",
+    "last_login": "2026-05-13T16:43:24.381Z",
+    "is_superuser": true,
+    "username": "developer",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-13T16:43:10.238Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5ljrc4nxbfn5qihp8a8xhk97ww5a2xtg",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnreP2jpOcM1vqHA8iW4qRC3B0ipYD2zcx7MU_bWv028uLnxM5MsNPvFig-cttBulO7dR57W5c58F3hBx382lN-Xg7376DSqN8aMKZCLiPKkCw5S1EBobFByVAURTSAQhXIRiPZqNPkUEsIekJJINj7A_H0N5I:1uTyY8:e83lFkKTSpItF8UXhLq0M9BIdIK5EkWqELmuxclYId4",
+    "expire_date": "2025-07-08T07:58:36.169Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7uuc35w930crj3ifcoxtvt5f473mdw9q",
+  "fields": {
+    "session_data": ".eJxVjMFuhCAURf-FtUEpjA6zbLpp0kn6B-QBT8UqWJBFM_HfC8ks2s1L3jn33gdRkI9Z5YRROUtuhJPmL9NgvtBXYRfwU6Am-CM6TWuEPm2i92BxfX1m_w3MkOba7sWFo7Zjr7nujJDIrQDWMSY7yc111HKQVljsTa_FVXJ-QTC9YWzkCIMoowbiQW4PwurxsGGZvTtvx7wWu0dnCmEvtGvIdwZ_uOOn_LIhboMJVY5rKbQbWgftZwwf7xW3q9unNaSkmPI6imV4o8s-kfM8fwGL3l0k:1ukf6W:PgX_TpAgTaFJomz7KQ9G_J1vDZeY6eUy-mBKcapMKTs",
+    "expire_date": "2025-08-23T08:39:04.349Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jmifhobgyt1bur0iixvc2k5wf2s2v0n4",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnreP2jpOcM1vqHA8iW4qRC3B0ipYD2zcx7MU_bWv028uLnxM5MsNPvFig-cttBulO7dR57W5c58F3hBx382lN-Xg7376DSqN8aMKZCLiPKkCw5S1EBobFByVAURTSAQhXIRiPZqNPkUEsIekJJINj7A_H0N5I:1uCDlr:uqgn0cS56FRsQc_YtiWqQTRmqJJqtcz7Ij-T6Di6RI0",
+    "expire_date": "2025-05-20T08:35:23.262Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "m9s1gak5ojeqykube5oy9gnwteimwejf",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAQAP-yNbLsXV9JSc8brPWFAyiR4qRC_B1FSgHtzGjeEHjfWth7WcOUYQQHl18WOT3LfIj84Pm-iLTM2zpFcSTitF3cllxe17P9GzTuDUZQLqZcvbbFSY-KjDLZI0rWmIiYrZNGkcvEdog0RCxqsKhqdd5j0QSfL7_7NrI:1wNB6M:3TfxSSxrfiFThhJnnCtdNrZVOYXv4isPZb7tvQx-yJM",
+    "expire_date": "2026-05-27T15:02:22.252Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ogqy7av1qbqzt4quom7xr9c0slb0jogh",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQAP9lz4bwKAv06N1vaGBZpGog6eNk_HfTpAe9zkzmDVPctzrtKy_TnGEED5dfliI9uR0iP2K7d0G9bcucxJGI067i1jO_rmf7N6hxrTBCKoqtoaxR2jB4wzYEQvSD9ljYyKIoMWY9KFMQvUMXZZDBEadCqkT4fAHWMjfD:1wNCg8:asSwYUBfzALU9M4j1k9gcMDlQsHhGdXQl1QdKQeAZ8A",
+    "expire_date": "2026-05-27T16:43:24.389Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rwkpkz135jkco3zkfm09k9qwjcbfnyju",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-JjYlfc5grXcXHEC2FCcV4u4QKQW0b2beSyTY1pK2zkuaSZyFFaffLQM-uO6A7lBvTWKr6zJnuSvyoF1Ojfh5Ody_gwK9fGsfr-DIj84YS8CjMWaIjjNaVFqHyMrqqJTXpF1gj-BsxiEQhGCiC168P8YmNuI:1uiUTQ:zMNqcoa1bc2f1fLGkQDAF0BlIAau4A0eqqMKDxC4ewg",
+    "expire_date": "2025-08-17T08:53:44.735Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "srfkhahqncl4jno6vh8dvw5q85fb8h9k",
+  "fields": {
+    "session_data": ".eJyNkM1uwjAQhF8F-YyDbWLH4VbUHlBLqVClHiP_JRhCnCZOEUK8ex3KAaS06p5Ws7szn_YElGg8mJ1AaVsPcd_VjdOd8q9ib8AMLG2l864E46BbFRRMIjQGn52ovPVHMIvHwO5F0e9O9kZbMXlr3MuilyalrYvStW2Gs0o28TZ5jLZ1cfG6ZGT-WPeHffiNanWIOY9BZQ5DSA_L1fppNF-vPkbPi_ffyfAQ2ZfV5geu3jjvMoIIhYhDhDMcw2kCUTLMGGAGEC9vYwOMe9eY0bxxh9HO-htGes9I_vie6D2gNKLzR0hFwrhiBDJKJYwJVzA1KYJJnKcJ0kQxw__9XHYO6Fnw3WRda5qLBqbgTpNC7UzVD_RWVIWLlKt8Y2XUr0TXaRstnTbl_Lp7Z7AR7SZcc8YN1izFROaCU4EUD8UYlqniSvNEIjxVRFIVSlKRY5XnGsc8jNOcMnD-BsM92uI:1uj8yV:xOJmNEijYcOOBmI5koVRrWaa6uK2dsVtsHS01bDmQBU",
+    "expire_date": "2025-08-19T04:08:31.693Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "uvnigct161gzh1b51h885vg8xhql2gli",
+  "fields": {
+    "session_data": ".eJxVjEtvwyAQhP_Lni0ErMGPY89NlUPuFs-aJsUuhkMU-b8Xq6nU7mGknZlvHjCpkuepbC5NwcIICM1fTytzdfEI7IeK7wsxS8wpaHJUyDPdyGmx7vby7P4bmNU2V1pw2nOBOAyM0k5awzhiJ711g-a0ZcJLN1isZ6SWrcQehfOik6rvrddtHTUqZRgfwA5Z02KLyW_q09X1U4jWl1strSmY6jBOaANfRcUc8h1GbH6Jy309iPPP9xq2DPu-fwPafVWC:1uiG7R:lpRTbPuSDpD_qpy3JRT0wLpXd18oIEajgF2CuTpl3-c",
+    "expire_date": "2025-08-16T17:34:05.679Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wi1t3eilqs9v6l55cpw4j0u7zwzs54kb",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCgpS0u3XsGMjPMSNVAUtqV8e7apAvd_vfef6kI25rj1niJc1Jn5dTpd0OgB5cdpDuUW9VUy7rMqHdFH7Tpa038vBzu30GGlr-1DwbBYgecWKQfxXACFssIDoZJyDo3SAihk8mJOG88MdGYUEh67NT7AypWOeM:1ufi6G:VIozXncQeCaN6QtVxVLNWVgK1yGLOk3JHnwG5XHvJL4",
+    "expire_date": "2025-08-09T16:50:20.650Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wlj3fxmi84ta2836whw34yobp3hlxji0",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlmxsh-Hkp4zRLv2mgRQIuVTRdwdWUoB7ZuZd7he9m3o99WWfszu6thdfjeV9LKpgvyU6TH7NE_bMqqvij_p6u9ztvftdP8OBlmHWjNTbhk4UgcNlYJBhRBZSS1ojARojFAgNCmSSUBDAJMOWkyk7vMFxvc3Nw:1wNQsS:5FPMnhBlknmIy702ewSEV7I8AahbNWpRNLm_HBGOsh8",
+    "expire_date": "2026-05-28T07:53:04.699Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xc7d4biubkgv0rk0gyv8sx5lqoenxxfc",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnreP2jpOcM1vqHA8iW4qRC3B0ipYD2zcx7MU_bWv028uLnxM5MsNPvFig-cttBulO7dR57W5c58F3hBx382lN-Xg7376DSqN8aMKZCLiPKkCw5S1EBobFByVAURTSAQhXIRiPZqNPkUEsIekJJINj7A_H0N5I:1uRR19:hjLjZV0guT6cDmvTiOViKemV8A70vV5hx8ut8Q5Fy0A",
+    "expire_date": "2025-07-01T07:46:03.688Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xdlaj2scuuul0nvaeky9vahykx814443",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnreP2jpOcM1vqHA8iW4qRC3B0ipYD2zcx7MU_bWv028uLnxM5MsNPvFig-cttBulO7dR57W5c58F3hBx382lN-Xg7376DSqN8aMKZCLiPKkCw5S1EBobFByVAURTSAQhXIRiPZqNPkUEsIekJJINj7A_H0N5I:1uJpFb:4ALf-5iC-Wg-hKeUIoP_62D9gDukW-bXpRHMycsQJbo",
+    "expire_date": "2025-06-10T08:01:31.682Z"
+  }
+},
+{
+  "model": "accounts.accesstoken",
+  "pk": 1,
+  "fields": {
+    "token": "amore168",
+    "is_active": true
+  }
+},
+{
+  "model": "accounts.topbanner",
+  "pk": 1,
+  "fields": {
+    "Logo": "Logo/amorelogo_sU41zB9.png"
+  }
+},
+{
+  "model": "accounts.gallery",
+  "pk": 3,
+  "fields": {
+    "GallImage": "Gallery/Screenshot_2025-08-09_001019.png"
+  }
+},
+{
+  "model": "accounts.gallery",
+  "pk": 4,
+  "fields": {
+    "GallImage": "Gallery/515437198_18287367907252648_4650140044130850586_n_-_Copy_ysxD5dJ.jpg"
+  }
+},
+{
+  "model": "accounts.gallery",
+  "pk": 5,
+  "fields": {
+    "GallImage": "Gallery/514989788_18287367898252648_7101958637876858596_n_-_Copy.jpg"
+  }
+},
+{
+  "model": "accounts.gallery",
+  "pk": 6,
+  "fields": {
+    "GallImage": "Gallery/Screenshot_2025-08-09_002842_BVGMcri.png"
+  }
+},
+{
+  "model": "accounts.menu",
+  "pk": 8,
+  "fields": {
+    "MenuName": "Home",
+    "url_name": "IndexTZ"
+  }
+},
+{
+  "model": "accounts.menu",
+  "pk": 9,
+  "fields": {
+    "MenuName": "Shop",
+    "url_name": "ShopTZ"
+  }
+},
+{
+  "model": "accounts.menu",
+  "pk": 10,
+  "fields": {
+    "MenuName": "About",
+    "url_name": "AboutTZ"
+  }
+},
+{
+  "model": "accounts.menu",
+  "pk": 11,
+  "fields": {
+    "MenuName": "Latest",
+    "url_name": null
+  }
+},
+{
+  "model": "accounts.menu",
+  "pk": 12,
+  "fields": {
+    "MenuName": "Blog",
+    "url_name": "BlogTZ"
+  }
+},
+{
+  "model": "accounts.menu",
+  "pk": 13,
+  "fields": {
+    "MenuName": "Contact",
+    "url_name": "ContactTZ"
+  }
+},
+{
+  "model": "accounts.submenu",
+  "pk": 1,
+  "fields": {
+    "SubMenuName": "Product List",
+    "MenuID": 11,
+    "url_name": "ShopTZ"
+  }
+},
+{
+  "model": "accounts.submenu",
+  "pk": 2,
+  "fields": {
+    "SubMenuName": "Product Detail",
+    "MenuID": 11,
+    "url_name": "ProDetailTZ"
+  }
+},
+{
+  "model": "accounts.submenu",
+  "pk": 3,
+  "fields": {
+    "SubMenuName": "Blog List",
+    "MenuID": 12,
+    "url_name": "BlogTZ"
+  }
+},
+{
+  "model": "accounts.submenu",
+  "pk": 4,
+  "fields": {
+    "SubMenuName": "Blog Details",
+    "MenuID": 12,
+    "url_name": "BlogDetailTZ"
+  }
+},
+{
+  "model": "accounts.slide",
+  "pk": 1,
+  "fields": {
+    "SlideName": "Slide 1",
+    "SildeHead": "<h5><span style=\"font-size:36px\">BEAUTY BEGINS HERE-DISCOVER, CREATES, GLOW</span></h5>",
+    "SlideBody": "<h4><span style=\"font-size:24px\">High quality, suitable price, unique.</span></h4>",
+    "SlideImage": "SlideImage/photo_2025-08-03_14-29-07-removebg-preview.png"
+  }
+},
+{
+  "model": "accounts.slide",
+  "pk": 4,
+  "fields": {
+    "SlideName": "Slide 2",
+    "SildeHead": "<h5><span style=\"font-size:36px\">BEAUTY BEGINS HERE-DISCOVER, CREATES, GLOW</span></h5>",
+    "SlideBody": "<h4><span style=\"font-size:24px\">High quality, suitable price, unique.</span></h4>",
+    "SlideImage": "SlideImage/Screenshot_2025-08-08_232102-removebg-preview.png"
+  }
+},
+{
+  "model": "accounts.productcategory",
+  "pk": 1,
+  "fields": {
+    "CategoryName": "Lip Gloss"
+  }
+},
+{
+  "model": "accounts.productcategory",
+  "pk": 2,
+  "fields": {
+    "CategoryName": "Blush"
+  }
+},
+{
+  "model": "accounts.productcategory",
+  "pk": 3,
+  "fields": {
+    "CategoryName": "Amore Body Brush"
+  }
+},
+{
+  "model": "accounts.productcategory",
+  "pk": 4,
+  "fields": {
+    "CategoryName": "Shimmer Oil"
+  }
+},
+{
+  "model": "accounts.productcategory",
+  "pk": 5,
+  "fields": {
+    "CategoryName": "Lip Liner X Lip gloss set"
+  }
+},
+{
+  "model": "accounts.productcategory",
+  "pk": 6,
+  "fields": {
+    "CategoryName": "Amore Eyes brow set"
+  }
+},
+{
+  "model": "accounts.productcategory",
+  "pk": 7,
+  "fields": {
+    "CategoryName": "Bare Sunscreen"
+  }
+},
+{
+  "model": "accounts.newarrivals",
+  "pk": 1,
+  "fields": {
+    "ProCategoryID": 6,
+    "NewAImage": "ProvideImage/photo_2025-08-01_14-37-07.jpg",
+    "NewAName": "AMORE BROW KIT",
+    "NewAPrice": "13.00"
+  }
+},
+{
+  "model": "accounts.newarrivals",
+  "pk": 2,
+  "fields": {
+    "ProCategoryID": 5,
+    "NewAImage": "ProvideImage/photo_2025-07-15_23-58-58.jpg",
+    "NewAName": "Uncensored & Demure",
+    "NewAPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.newarrivals",
+  "pk": 3,
+  "fields": {
+    "ProCategoryID": 7,
+    "NewAImage": "ProvideImage/photo_2025-07-31_16-22-51.jpg",
+    "NewAName": "Bare Sunscreen",
+    "NewAPrice": "35.00"
+  }
+},
+{
+  "model": "accounts.newarrivals",
+  "pk": 5,
+  "fields": {
+    "ProCategoryID": 3,
+    "NewAImage": "ProvideImage/photo_2025-08-01_14-37-24.jpg",
+    "NewAName": "Amore Body Brush",
+    "NewAPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.newarrivals",
+  "pk": 6,
+  "fields": {
+    "ProCategoryID": 4,
+    "NewAImage": "ProvideImage/photo_2025-08-01_14-37-46.jpg",
+    "NewAName": "Shimmer Oil",
+    "NewAPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.newarrivals",
+  "pk": 7,
+  "fields": {
+    "ProCategoryID": 2,
+    "NewAImage": "ProvideImage/photo_2025-08-01_14-39-46.jpg",
+    "NewAName": "Blush",
+    "NewAPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.popularitems",
+  "pk": 1,
+  "fields": {
+    "ProCategoryID": 2,
+    "PopIImage": "ProvideImage/photo_2025-08-01_14-39-46_fhgcBBk.jpg",
+    "PopIName": "Blush",
+    "PopIPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.popularitems",
+  "pk": 2,
+  "fields": {
+    "ProCategoryID": 1,
+    "PopIImage": "ProvideImage/lipgloss_4.jpg",
+    "PopIName": "Lip Gloss",
+    "PopIPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.popularitems",
+  "pk": 3,
+  "fields": {
+    "ProCategoryID": 4,
+    "PopIImage": "ProvideImage/photo_2025-08-01_14-37-46_nji8ZuQ.jpg",
+    "PopIName": "Shimmer Oil",
+    "PopIPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.popularitems",
+  "pk": 4,
+  "fields": {
+    "ProCategoryID": 1,
+    "PopIImage": "ProvideImage/amore-beauty-8284f1a0-8670-4788-8b1a-e480a58fc5d0_YxsUZAu.jpg",
+    "PopIName": "Amore Lip gloss Shimmer",
+    "PopIPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.productlist",
+  "pk": 1,
+  "fields": {
+    "ProCategoryID": 1,
+    "ProLName": "Mindful",
+    "ProLImage": "ProLImage/lipgloss_1_nbr4j7D.jpg",
+    "ProLPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.productlist",
+  "pk": 3,
+  "fields": {
+    "ProCategoryID": 2,
+    "ProLName": "Dried Rose",
+    "ProLImage": "ProLImage/photo_2025-08-03_14-11-50.jpg",
+    "ProLPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.productlist",
+  "pk": 5,
+  "fields": {
+    "ProCategoryID": 1,
+    "ProLName": "Sigma",
+    "ProLImage": "ProLImage/lipgloss_3_TvRW361.jpg",
+    "ProLPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.productlist",
+  "pk": 6,
+  "fields": {
+    "ProCategoryID": 1,
+    "ProLName": "Demure",
+    "ProLImage": "ProLImage/lipgloss_4_aYDyzI3.jpg",
+    "ProLPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.productlist",
+  "pk": 7,
+  "fields": {
+    "ProCategoryID": 1,
+    "ProLName": "Cutesy",
+    "ProLImage": "ProLImage/lipgloss_6.jpg",
+    "ProLPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.productlist",
+  "pk": 9,
+  "fields": {
+    "ProCategoryID": 1,
+    "ProLName": "Radiant Red",
+    "ProLImage": "ProLImage/lipgloss_2_n0LU8BD.jpg",
+    "ProLPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.productlist",
+  "pk": 10,
+  "fields": {
+    "ProCategoryID": 2,
+    "ProLName": "Ripe Hawthorn",
+    "ProLImage": "ProLImage/photo_2025-07-15_23-57-17.jpg",
+    "ProLPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.productlist",
+  "pk": 11,
+  "fields": {
+    "ProCategoryID": 2,
+    "ProLName": "Sweet Peach",
+    "ProLImage": "ProLImage/photo_2025-08-10_22-56-36.jpg",
+    "ProLPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.productlist",
+  "pk": 12,
+  "fields": {
+    "ProCategoryID": 2,
+    "ProLName": "Cappuccino",
+    "ProLImage": "ProLImage/photo_2025-08-10_22-57-09.jpg",
+    "ProLPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.productlist",
+  "pk": 13,
+  "fields": {
+    "ProCategoryID": 2,
+    "ProLName": "Peachy",
+    "ProLImage": "ProLImage/photo_2025-08-10_22-58-00.jpg",
+    "ProLPrice": "12.00"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 5,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": 1,
+    "ProListID": null,
+    "ProDeImage": "ProLImage/photo_2025-08-01_14-37-07_qlvrpIM.jpg",
+    "ProDeName": "AMORE BROW KIT",
+    "ProDePrice": "13.00",
+    "Pro_detail_description_1": "<p>This BROW KIT contain 1 brow fixer gel, 1 brow cream, and 1 brow pencil. The rich color drawn a perfect &amp; natural looking eyebrows.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE BROW KIT&nbsp;</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;<em>Brow Fixer&mdash;</em>Gel shapes and sets hairs in place.</p>\r\n\r\n\t<ul>\r\n\t\t<li dir=\"ltr\">\r\n\t\t<p dir=\"ltr\">- The unique formula and versatile applicators will create the perfect brow.</p>\r\n\t\t</li>\r\n\t\t<li dir=\"ltr\">\r\n\t\t<p dir=\"ltr\">- Apply gel through brows, working forwards and backwards.</p>\r\n\t\t</li>\r\n\t\t<li dir=\"ltr\">\r\n\t\t<p dir=\"ltr\">- For extra hold or for thicker brows, do this a few times to build up product.</p>\r\n\t\t</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<hr />\r\n\t<p dir=\"ltr\"><em>Brow Cream&mdash;</em>adds depth and shade to your brows. It is buildable to create many shades per color to suit everyone. The specially designed angular brush allows you to fill in any gaps.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<hr />\r\n\t<p dir=\"ltr\"><em>Brow Pencil&mdash;</em>finishes by outlining brow hair strokes for ultimate 3D definition with the ultra-fine tip. The brush allows you to softly blend all products together and finish the perfect brow.</p>\r\n\t</li>\r\n</ul>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 7,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": 2,
+    "ProListID": null,
+    "ProDeImage": "ProLImage/photo_2025-08-10_14-45-26.jpg",
+    "ProDeName": "Uncensored & Demure",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE LIP GLOSS shine everyday. This Smooth, non-sticky gloss gives your lip a pretty glow and soft shimmer perfect for everyday use and&nbsp;&nbsp;AMORE Lip liner is a best combo​​ with our lip gloss</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE&nbsp;</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE LIP LINER</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;- Before applying the lip liner, make sure that your lip is moist and choose the shade to apply the outline lip.</p>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">After that you should apply lipstick to fill the lip for longer wear or lip gloss over it.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<p dir=\"ltr\"><strong>AMORE LIP GLOSS SHIMMER</strong></p>\r\n\r\n<p dir=\"ltr\">Apply a generous coat of AMORE Lip Gloss Shimmer onto clean lips for a dazzling and radiant finish.</p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>CAUTIONS</strong></p>\r\n\r\n<p dir=\"ltr\">- For external use only, avoid contact with eyes.</p>\r\n\r\n<p dir=\"ltr\">- In case of irritation. Discontinue use and consult a healthcare professional.</p>\r\n\r\n<p>&nbsp;</p>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 8,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": 3,
+    "ProListID": null,
+    "ProDeImage": "ProLImage/photo_2025-08-10_14-55-44.jpg",
+    "ProDeName": "Bare Sunscreen",
+    "ProDePrice": "35.00",
+    "Pro_detail_description_1": "<p>Multi-award-winning. Korea&rsquo;s bestselling sunscreen for years.<br />\r\nThis moisturizing sunscreen offers powerful SPF 45+ broad-spectrum protection from harmful UVA and UVB rays&mdash;while delivering the comfort of a daily moisturizer.<br />\r\nLightweight, hydrating, and non-greasy, it absorbs easily to leave your skin soft, calm, and protected.<br />\r\nShield your skin. Stay moisturized. Every day.</p>",
+    "Pro_detail_description_2": "<p><strong>USES</strong><br />\r\n- Helps prevent sunburn<br />\r\n- If used as directed with other sun protection measures (see Directions) decreases the risk of skin cancer and early skin aging caused by the sun.<br />\r\n<br />\r\n<strong>DOSAGE &amp; ADMINISTRATION</strong><br />\r\n<strong>- Directions</strong><br />\r\nApply liberally and evenly 15 minutes before sun exposure.<br />\r\n<br />\r\n<strong>- Sun Protection Measures</strong><br />\r\n​Spending time in the sun increases your risk of skin cancer and early aging. To decrease this risk, regularly use a sunscreen with a Broad Spectrum SPF value of 15 or higher and other sun protection measures including: limit time in the sun, especially from 10 a.m. - 2 p.m., wear long-sleeved shirts, pants, hats, and sunglasses<br />\r\n- Children under 6 months of age: Ask a doctor<br />\r\n- Reapply at least every 2 hours.<br />\r\n- Use a water-resistant sunscreen if swimming or sweating</p>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 9,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": 5,
+    "ProListID": null,
+    "ProDeImage": "ProLImage/photo_2025-08-01_14-37-24_xf1OsBE.jpg",
+    "ProDeName": "Amore Body Brush",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>- Brushes (especially dense, fluffy ones) help distribute product efficiently, making it easier to cover large areas like arms, legs, and shoulders. - Using a brush keeps your hands clean, avoiding slippery fingers or shimmer getting under nails.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>How to Use a Body Shimmer Oil Brush</strong></p>\r\n\r\n<p dir=\"ltr\"><strong>1. Prep Your Skin</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Shower or cleanse your skin to remove dirt or sweat.</p>\r\n\r\n\t<hr /></li>\r\n</ul>\r\n\r\n<p dir=\"ltr\"><strong>2. Apply with the brush.</strong></p>\r\n\r\n<p dir=\"ltr\">- Using soft, sweeping strokes, apply the shimmer oil with the brush in circular or long motions.</p>\r\n\r\n<p dir=\"ltr\">- Focus on areas you want to highlight, such as:</p>\r\n\r\n<p dir=\"ltr\">. Shoulders</p>\r\n\r\n<p dir=\"ltr\">. Collarbone</p>\r\n\r\n<p dir=\"ltr\">. Arms</p>\r\n\r\n<p dir=\"ltr\">. Legs</p>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 10,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": null,
+    "ProListID": 1,
+    "ProDeImage": "ProLImage/lipgloss_1_H0Npmkk.jpg",
+    "ProDeName": "Mindful",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE LIP GLOSS shine everyday. This Smooth, non-sticky gloss gives your lip a pretty glow and soft shimmer perfect for everyday use.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE LIP GLOSS SHIMMER</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Apply a generous coat of AMORE Lip Gloss Shimmer onto clean lips for a dazzling and radiant finish.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>CAUTIONS</strong></p>\r\n\r\n<p dir=\"ltr\">- For external use only, avoid contact with eyes.</p>\r\n\r\n<p dir=\"ltr\">- In case of irritation. Discontinue use and consult a healthcare professional.</p>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 11,
+  "fields": {
+    "popular_item_ID": 1,
+    "new_arrival_ID": null,
+    "ProListID": null,
+    "ProDeImage": "ProLImage/photo_2025-08-03_14-11-50_eduI2VQ.jpg",
+    "ProDeName": "Blush",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE creamy blushes are versatile and likely work well for both cheeks and lips, offering buildable pigment and a radiant finish. Each blush has a smooth, balm-like texture ideal for blending seamlessly into the skin for a natural, dewy finish.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p><strong>AMORE CREAMY BLUSH</strong></p>\r\n\r\n<p dir=\"ltr\">- Before using, use your fingertips to gently make a circular motion on the paste.</p>\r\n\r\n<p dir=\"ltr\">- Apply on your cheeks, eyes, lips.&nbsp;</p>\r\n\r\n<p dir=\"ltr\">- Blend with your fingertips, a sponge, or a brush.</p>\r\n\r\n<p dir=\"ltr\"><strong>CAUTIONS:</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;In case of irritation. discontinue use and consult a healthcare professional.</p>\r\n\t</li>\r\n</ul>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 12,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": 6,
+    "ProListID": null,
+    "ProDeImage": "ProLImage/photo_2025-08-01_14-37-46_IiWD7DR.jpg",
+    "ProDeName": "Shimmer Oil",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE LIP GLOSS shine everyday. This Smooth, non-sticky gloss gives your lip a pretty glow and soft shimmer perfect for everyday use.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE LIP GLOSS SHIMMER</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Apply a generous coat of AMORE Lip Gloss Shimmer onto clean lips for a dazzling and radiant finish.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>CAUTIONS</strong></p>\r\n\r\n<p dir=\"ltr\">- For external use only, avoid contact with eyes.</p>\r\n\r\n<p dir=\"ltr\">- In case of irritation. Discontinue use and consult a healthcare professional.</p>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 13,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": 7,
+    "ProListID": null,
+    "ProDeImage": "ProLImage/photo_2025-08-01_14-39-46_qP5PRwB.jpg",
+    "ProDeName": "Blush",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE creamy blushes are versatile and likely work well for both cheeks and lips, offering buildable pigment and a radiant finish. Each blush has a smooth, balm-like texture ideal for blending seamlessly into the skin for a natural, dewy finish.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p><strong>AMORE CREAMY BLUSH</strong></p>\r\n\r\n<p dir=\"ltr\">- Before using, use your fingertips to gently make a circular motion on the paste.</p>\r\n\r\n<p dir=\"ltr\">- Apply on your cheeks, eyes, lips.&nbsp;</p>\r\n\r\n<p dir=\"ltr\">- Blend with your fingertips, a sponge, or a brush.</p>\r\n\r\n<p dir=\"ltr\"><strong>CAUTIONS:</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;In case of irritation. discontinue use and consult a healthcare professional.</p>\r\n\t</li>\r\n</ul>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 14,
+  "fields": {
+    "popular_item_ID": 2,
+    "new_arrival_ID": null,
+    "ProListID": null,
+    "ProDeImage": "ProLImage/lipgloss_4_AQMLcGg.jpg",
+    "ProDeName": "Lip Gloss",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE LIP GLOSS shine everyday. This Smooth, non-sticky gloss gives your lip a pretty glow and soft shimmer perfect for everyday use.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE LIP GLOSS SHIMMER</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Apply a generous coat of AMORE Lip Gloss Shimmer onto clean lips for a dazzling and radiant finish.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>CAUTIONS</strong></p>\r\n\r\n<p dir=\"ltr\">- For external use only, avoid contact with eyes.</p>\r\n\r\n<p dir=\"ltr\">- In case of irritation. Discontinue use and consult a healthcare professional.</p>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 15,
+  "fields": {
+    "popular_item_ID": 3,
+    "new_arrival_ID": null,
+    "ProListID": null,
+    "ProDeImage": "ProLImage/photo_2025-08-01_14-37-46_TlwYuUs.jpg",
+    "ProDeName": "Shimmer Oil",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE LIP GLOSS shine everyday. This Smooth, non-sticky gloss gives your lip a pretty glow and soft shimmer &ndash; perfect for everyday use.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE LIP GLOSS SHIMMER</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Apply a generous coat of AMORE Lip Gloss Shimmer onto clean lips for a dazzling and radiant finish.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<p dir=\"ltr\">CAUTIONS</p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;For external use only avoid contact with eyes.</p>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;In case of irritation. discontinue use and consult a healthcare professional.</p>\r\n\t</li>\r\n</ul>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 16,
+  "fields": {
+    "popular_item_ID": 4,
+    "new_arrival_ID": null,
+    "ProListID": null,
+    "ProDeImage": "ProLImage/amore-beauty-8284f1a0-8670-4788-8b1a-e480a58fc5d0.jpg",
+    "ProDeName": "Amore Lip gloss Shimmer",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE LIP GLOSS shine everyday. This Smooth, non-sticky gloss gives your lip a pretty glow and soft shimmer perfect for everyday use.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE LIP GLOSS SHIMMER</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Apply a generous coat of AMORE Lip Gloss Shimmer onto clean lips for a dazzling and radiant finish.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>CAUTIONS</strong></p>\r\n\r\n<p dir=\"ltr\">- For external use only, avoid contact with eyes.</p>\r\n\r\n<p dir=\"ltr\">- In case of irritation. Discontinue use and consult a healthcare professional.</p>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 17,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": null,
+    "ProListID": 5,
+    "ProDeImage": "ProLImage/lipgloss_3_EO92iiX.jpg",
+    "ProDeName": "Sigma",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE LIP GLOSS shine everyday. This Smooth, non-sticky gloss gives your lip a pretty glow and soft shimmer perfect for everyday use.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE LIP GLOSS SHIMMER</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Apply a generous coat of AMORE Lip Gloss Shimmer onto clean lips for a dazzling and radiant finish.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>CAUTIONS</strong></p>\r\n\r\n<p dir=\"ltr\">- For external use only, avoid contact with eyes.</p>\r\n\r\n<p dir=\"ltr\">- In case of irritation. Discontinue use and consult a healthcare professional.</p>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 18,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": null,
+    "ProListID": 6,
+    "ProDeImage": "ProLImage/lipgloss_4_yAypFdL.jpg",
+    "ProDeName": "Demure",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE LIP GLOSS shine everyday. This Smooth, non-sticky gloss gives your lip a pretty glow and soft shimmer perfect for everyday use.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>AMORE LIP GLOSS SHIMMER</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Apply a generous coat of AMORE Lip Gloss Shimmer onto clean lips for a dazzling and radiant finish.</p>\r\n\t</li>\r\n</ul>\r\n\r\n<hr />\r\n<p dir=\"ltr\"><strong>CAUTIONS</strong></p>\r\n\r\n<p dir=\"ltr\">- For external use only, avoid contact with eyes.</p>\r\n\r\n<p dir=\"ltr\">- In case of irritation. Discontinue use and consult a healthcare professional.</p>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 19,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": null,
+    "ProListID": 3,
+    "ProDeImage": "ProLImage/photo_2025-08-03_14-11-50_fEXYGDw.jpg",
+    "ProDeName": "Dried Rose",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE creamy blushes are versatile and likely work well for both cheeks and lips, offering buildable pigment and a radiant finish. Each blush has a smooth, balm-like texture ideal for blending seamlessly into the skin for a natural, dewy finish.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p><strong>AMORE CREAMY BLUSH</strong></p>\r\n\r\n<p dir=\"ltr\">- Before using, use your fingertips to gently make a circular motion on the paste.</p>\r\n\r\n<p dir=\"ltr\">- Apply on your cheeks, eyes, lips.&nbsp;</p>\r\n\r\n<p dir=\"ltr\">- Blend with your fingertips, a sponge, or a brush.</p>\r\n\r\n<p dir=\"ltr\"><strong>CAUTIONS:</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;In case of irritation. discontinue use and consult a healthcare professional.</p>\r\n\t</li>\r\n</ul>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 20,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": null,
+    "ProListID": 10,
+    "ProDeImage": "ProLImage/photo_2025-07-15_23-57-17_L7vI5zM.jpg",
+    "ProDeName": "Ripe Hawthorne",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE creamy blushes are versatile and likely work well for both cheeks and lips, offering buildable pigment and a radiant finish. Each blush has a smooth, balm-like texture ideal for blending seamlessly into the skin for a natural, dewy finish.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p><strong>AMORE CREAMY BLUSH</strong></p>\r\n\r\n<p dir=\"ltr\">- Before using, use your fingertips to gently make a circular motion on the paste.</p>\r\n\r\n<p dir=\"ltr\">- Apply on your cheeks, eyes, lips.&nbsp;</p>\r\n\r\n<p dir=\"ltr\">- Blend with your fingertips, a sponge, or a brush.</p>\r\n\r\n<p dir=\"ltr\"><strong>CAUTIONS:</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;In case of irritation. discontinue use and consult a healthcare professional.</p>\r\n\t</li>\r\n</ul>"
+  }
+},
+{
+  "model": "accounts.productdetail",
+  "pk": 21,
+  "fields": {
+    "popular_item_ID": null,
+    "new_arrival_ID": null,
+    "ProListID": 11,
+    "ProDeImage": "ProLImage/photo_2025-08-10_22-56-36_AAwwHN7.jpg",
+    "ProDeName": "Sweet Peach",
+    "ProDePrice": "12.00",
+    "Pro_detail_description_1": "<p>AMORE creamy blushes are versatile and likely work well for both cheeks and lips, offering buildable pigment and a radiant finish. Each blush has a smooth, balm-like texture ideal for blending seamlessly into the skin for a natural, dewy finish.</p>",
+    "Pro_detail_description_2": "<p dir=\"ltr\"><strong>HOW TO USE</strong></p>\r\n\r\n<hr />\r\n<p><strong>AMORE CREAMY BLUSH</strong></p>\r\n\r\n<p dir=\"ltr\">- Before using, use your fingertips to gently make a circular motion on the paste.</p>\r\n\r\n<p dir=\"ltr\">- Apply on your cheeks, eyes, lips.&nbsp;</p>\r\n\r\n<p dir=\"ltr\">- Blend with your fingertips, a sponge, or a brush.</p>\r\n\r\n<p dir=\"ltr\"><strong>CAUTIONS:</strong></p>\r\n\r\n<ul>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">&nbsp;In case of irritation. discontinue use and consult a healthcare professional.</p>\r\n\t</li>\r\n</ul>"
+  }
+},
+{
+  "model": "accounts.blog",
+  "pk": 1,
+  "fields": {
+    "BlogImage": "BlogImage/lipgloss_4.jpg",
+    "BlogName": "Lip Gloss in Amore",
+    "BlogDateDay": "03",
+    "BlogDateMonth": "August",
+    "Blogdescription": "<p>Lip gloss has made a huge comeback in recent years, and Korean beauty brands like <strong>Amore</strong> are leading the trend. Known for their innovative formulas and focus on healthy, radiant skin, Amore&#39;s lip glosses don&rsquo;t just add shine&mdash;they also nourish and protect your lips. Whether you&rsquo;re going for a subtle glow or a glossy glam look, Amore&rsquo;s brands like <strong>Etude House</strong> and <strong>Laneige</strong> offer lip glosses that suit every mood and moment.</p>",
+    "BlogRate": 4.0
+  }
+},
+{
+  "model": "accounts.blog",
+  "pk": 2,
+  "fields": {
+    "BlogImage": "BlogImage/photo_2025-08-01_14-39-46.jpg",
+    "BlogName": "Blush in Amore",
+    "BlogDateDay": "05",
+    "BlogDateMonth": "july",
+    "Blogdescription": "<p>When it comes to Korean beauty, <strong>Amore</strong> (short for Amorepacific) is a name that shines across the world. Known for its innovation, skincare-meets-makeup approach, and focus on natural beauty, Amore&rsquo;s brands offer some of the best <strong>blush products</strong> you can find.</p>\r\n\r\n<p>In this post, we&rsquo;ll explore <strong>why blush is essential</strong>, and how Amore&rsquo;s most loved brands&mdash;like <strong>Etude House</strong>, <strong>Innisfree</strong>, and <strong>Laneige</strong>&mdash;deliver beautiful, skin-loving blushes.</p>",
+    "BlogRate": 4.0
+  }
+},
+{
+  "model": "accounts.blog",
+  "pk": 3,
+  "fields": {
+    "BlogImage": "BlogImage/download_1rHfZRn.jpeg",
+    "BlogName": "Discover the Beauty of Amore Skincare: Korean Glow, Global Love",
+    "BlogDateDay": "27",
+    "BlogDateMonth": "july",
+    "Blogdescription": "<p>When it comes to skincare that blends nature, science, and beauty, <strong>Amore Skincare</strong> is a name you can trust. As part of <strong>Amorepacific</strong>, one of the biggest and most respected beauty companies in South Korea, Amore Skincare stands for high-quality ingredients, gentle care, and visible results.</p>\r\n\r\n<p>In this post, let&rsquo;s dive into what makes Amore Skincare so special and why it&rsquo;s becoming a favorite in beauty routines around the world.</p>",
+    "BlogRate": 5.0
+  }
+},
+{
+  "model": "accounts.blogdetails",
+  "pk": 1,
+  "fields": {
+    "BlogID": 1,
+    "BlogDeName": "Lip Gloss in Amore",
+    "BlogDeImage": "BlogImage/lipgloss_4_hASEelR.jpg",
+    "BlogDeDescription": "<p>Lip gloss has made a huge comeback in recent years, and Korean beauty brands like&nbsp;<strong>Amore</strong>&nbsp;are leading the trend. Known for their innovative formulas and focus on healthy, radiant skin, Amore&#39;s lip glosses don&rsquo;t just add shine&mdash;they also nourish and protect your lips. Whether you&rsquo;re going for a subtle glow or a glossy glam look, Amore&rsquo;s brands like&nbsp;<strong>Etude House</strong>&nbsp;and&nbsp;<strong>Laneige</strong>&nbsp;offer lip glosses that suit every mood and moment.</p>",
+    "BlogDeRate": 4.0
+  }
+},
+{
+  "model": "accounts.blogdetails",
+  "pk": 2,
+  "fields": {
+    "BlogID": 2,
+    "BlogDeName": "Blush in amore",
+    "BlogDeImage": "BlogImage/photo_2025-08-01_14-39-46_tfyizwp.jpg",
+    "BlogDeDescription": "<p>When it comes to Korean beauty,&nbsp;<strong>Amore</strong>&nbsp;(short for Amorepacific) is a name that shines across the world. Known for its innovation, skincare-meets-makeup approach, and focus on natural beauty, Amore&rsquo;s brands offer some of the best&nbsp;<strong>blush products</strong>&nbsp;you can find.</p>\r\n\r\n<p>In this post, we&rsquo;ll explore&nbsp;<strong>why blush is essential</strong>, and how Amore&rsquo;s most loved brands&mdash;like&nbsp;<strong>Etude House</strong>,&nbsp;<strong>Innisfree</strong>, and&nbsp;<strong>Laneige</strong>&mdash;deliver beautiful, skin-loving blushes.</p>",
+    "BlogDeRate": 5.0
+  }
+},
+{
+  "model": "accounts.contactus",
+  "pk": 1,
+  "fields": {
+    "Description_1": "Address",
+    "Address": "Cambodia",
+    "Description_2": "Phone Number",
+    "PhoneNum": "96 666 5133",
+    "Description_3": "Email",
+    "Email": "info@amore-beauty.com"
+  }
+},
+{
+  "model": "accounts.aboutus",
+  "pk": 1,
+  "fields": {
+    "Title_1": "AMORE – Cambodia’s Most Trusted Beauty Brand",
+    "Description_1": "<p><span style=\"font-size:22px\">Founded with passion and purpose, AMORE Beauty is a proudly Cambodian brand committed to redefining skincare with high-quality, affordable, and effective beauty essentials. We believe every individual deserves glowing, healthy skin&mdash;without compromise. Our products are inspired by nature, powered by science, and made for every skin type, including sensitive skin. With a growing community of loyal customers, AMORE Beauty is becoming a staple in local skincare routines and trusted by beauty lovers across Cambodia.</span></p>",
+    "Title_2": "A Leading Local Beauty Brand with Global Standards",
+    "Description_2": "<p><span style=\"font-size:22px\">We envision AMORE Beauty as the top Cambodian skincare brand recognized across Southeast Asia. We strive to build a sustainable beauty ecosystem that supports local production, educates consumers, and delivers world-class products that celebrate and care for every skin type.</span></p>"
+  }
+},
+{
+  "model": "accounts.privacy",
+  "pk": 1,
+  "fields": {
+    "Title_1": "Introduction",
+    "Description_1": "<p><strong>AMORE Beauty</strong>&nbsp;(&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is a locally owned beauty brand in Cambodia. We are committed to protecting the privacy of our users (&quot;you,&quot; &quot;your&quot;). This Privacy Policy explains how we collect, use, and share your personal information when you visit or use our website,&nbsp;<strong><a href=\"https://www.amore-beauty.com/\" rel=\"noopener\" target=\"_new\">www.amore-beauty.com</a></strong>&nbsp;(the &quot;Site&quot;).</p>",
+    "Title_2": "Information We Collect",
+    "Description_2": "<p>We may collect the following types of information:</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Personal Information</strong>: This includes information such as your name, email address, shipping address, phone number, and other details you provide when creating an account, subscribing to newsletters, making purchases, or contacting us.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong>Usage Information</strong>: We collect data about how you use the Site, including pages visited, time spent, links clicked, and other interaction data. This may be collected via cookies and other tracking tools.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong>Device Information</strong>: This includes your device&rsquo;s IP address, browser type, language settings, operating system, and mobile or desktop identifiers.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p><strong>Location Information</strong>&nbsp;<em>(if applicable)</em>: We may collect location data with your consent to help personalize your shopping experience (e.g., showing the nearest store or language settings).</p>\r\n\t</li>\r\n</ul>"
+  }
+},
+{
+  "model": "accounts.footer",
+  "pk": 1,
+  "fields": {
+    "Footer_image": "footer_images/amorelogo.png"
+  }
+},
+{
+  "model": "accounts.footerlink",
+  "pk": 1,
+  "fields": {
+    "name": "About Us",
+    "url_name": "AboutTZ"
+  }
+},
+{
+  "model": "accounts.footerlink",
+  "pk": 4,
+  "fields": {
+    "name": "Contact Us",
+    "url_name": "ContactTZ"
+  }
+},
+{
+  "model": "accounts.footerlink",
+  "pk": 5,
+  "fields": {
+    "name": "Shop",
+    "url_name": "ShopTZ"
+  }
+},
+{
+  "model": "accounts.footerlink",
+  "pk": 6,
+  "fields": {
+    "name": "My Account",
+    "url_name": "LoginTZ"
+  }
+},
+{
+  "model": "accounts.footerlink",
+  "pk": 7,
+  "fields": {
+    "name": "My Cart",
+    "url_name": "CartTZ"
+  }
+},
+{
+  "model": "accounts.footerlink",
+  "pk": 8,
+  "fields": {
+    "name": "Privacy & Policy",
+    "url_name": "PrivacyTZ"
+  }
+},
+{
+  "model": "accounts.qrcode",
+  "pk": 1,
+  "fields": {
+    "qrName": "AC ENG",
+    "qrImage": "images/qrcodes/photo_2_2025-08-10_22-24-10.jpg"
+  }
+},
+{
+  "model": "accounts.qrcode",
+  "pk": 2,
+  "fields": {
+    "qrName": "AC KH",
+    "qrImage": "images/qrcodes/photo_1_2025-08-10_22-24-10.jpg"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 1,
+  "fields": {
+    "customerName": "iewhfj",
+    "customerPhone": "45543432",
+    "customerAddress": null,
+    "customerEmail": null,
+    "totalAmount": "76.00",
+    "qr_code": null,
+    "QRCodeInvoice": ""
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 2,
+  "fields": {
+    "customerName": "Amore ",
+    "customerPhone": "123432",
+    "customerAddress": null,
+    "customerEmail": null,
+    "totalAmount": "46.00",
+    "qr_code": 1,
+    "QRCodeInvoice": "qrcodes/order_2_qr.png"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 3,
+  "fields": {
+    "customerName": "Amore ",
+    "customerPhone": "123432",
+    "customerAddress": null,
+    "customerEmail": null,
+    "totalAmount": "49.00",
+    "qr_code": 1,
+    "QRCodeInvoice": "qrcodes/order_3_qr.png"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 4,
+  "fields": {
+    "customerName": "Amore",
+    "customerPhone": "123432",
+    "customerAddress": null,
+    "customerEmail": null,
+    "totalAmount": "46.00",
+    "qr_code": 1,
+    "QRCodeInvoice": "qrcodes/photo_2_2025-08-10_22-24-10.jpg"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 5,
+  "fields": {
+    "customerName": "s",
+    "customerPhone": "123432",
+    "customerAddress": null,
+    "customerEmail": null,
+    "totalAmount": "59.00",
+    "qr_code": 1,
+    "QRCodeInvoice": "qrcodes/order_5_qr.png"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 6,
+  "fields": {
+    "customerName": "s",
+    "customerPhone": "123432",
+    "customerAddress": "cambodia",
+    "customerEmail": "slett4921@gmail.com",
+    "totalAmount": "70.00",
+    "qr_code": 1,
+    "QRCodeInvoice": "qrcodes/order_6_qr.png"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 7,
+  "fields": {
+    "customerName": "s",
+    "customerPhone": "123432",
+    "customerAddress": "Phnom Penh, Cambodia",
+    "customerEmail": "slett4921@gmail.com",
+    "totalAmount": "46.00",
+    "qr_code": 1,
+    "QRCodeInvoice": "qrcodes/order_7_qr.png"
+  }
+},
+{
+  "model": "accounts.order",
+  "pk": 8,
+  "fields": {
+    "customerName": "s",
+    "customerPhone": "123432",
+    "customerAddress": "Phnom Penh, Cambodia",
+    "customerEmail": "slett4921@gmail.com",
+    "totalAmount": "46.00",
+    "qr_code": 1,
+    "QRCodeInvoice": "qrcodes/order_8_qr.png"
+  }
+},
+{
+  "model": "accounts.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 2,
+    "productName": "Mindful",
+    "price": "12.00",
+    "qty": 3
+  }
+},
+{
+  "model": "accounts.orderitem",
+  "pk": 2,
+  "fields": {
+    "order": 3,
+    "productName": "AMORE BROW KIT",
+    "price": "13.00",
+    "qty": 3
+  }
+},
+{
+  "model": "accounts.orderitem",
+  "pk": 3,
+  "fields": {
+    "order": 4,
+    "productName": "Mindful",
+    "price": "12.00",
+    "qty": 3
+  }
+},
+{
+  "model": "accounts.orderitem",
+  "pk": 4,
+  "fields": {
+    "order": 5,
+    "productName": "AMORE BROW KIT",
+    "price": "13.00",
+    "qty": 1
+  }
+},
+{
+  "model": "accounts.orderitem",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "productName": "Mindful",
+    "price": "12.00",
+    "qty": 3
+  }
+},
+{
+  "model": "accounts.orderitem",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "productName": "Uncensored & Demure",
+    "price": "12.00",
+    "qty": 5
+  }
+},
+{
+  "model": "accounts.orderitem",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "productName": "Mindful",
+    "price": "12.00",
+    "qty": 3
+  }
+},
+{
+  "model": "accounts.orderitem",
+  "pk": 8,
+  "fields": {
+    "order": 8,
+    "productName": "Mindful",
+    "price": "12.00",
+    "qty": 3
+  }
+},
+{
+  "model": "accounts.cartitem",
+  "pk": 56,
+  "fields": {
+    "user": 3,
+    "content_type": 26,
+    "object_id": 1,
+    "quantity": 3,
+    "price": "12.00"
+  }
+}
+]

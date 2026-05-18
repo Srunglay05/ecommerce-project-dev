@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+
+    command: python manage.py runserver 0.0.0.0:8000
+
+    volumes:
+      - .:/app
+      - ./media:/app/media
+      - ./static:/app/static
+
+    ports:
+      - "8000:8000"
+
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
