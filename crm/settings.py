@@ -17,6 +17,8 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -32,6 +34,15 @@ INSTALLED_APPS = [
     'rest_framework',
 ]
 
+
+JAZZMIN_SETTINGS = {
+    "site_title": "AMORE Admin",
+    "site_header": "AMORE BEAUTY",
+    "site_brand": "AMORE BEAUTY",
+    "welcome_sign": "Welcome to AMORE Beauty Management",
+    "show_sidebar": True,
+    "navigation_expanded": True,
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -153,3 +164,14 @@ CKEDITOR_CONFIGS = {
 # Default primary key field type
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+UNFOLD = {
+
+    "SITE_TITLE": "AMORE Admin",
+
+    "SITE_HEADER": "AMORE BEAUTY",
+
+    "SITE_SYMBOL": "shopping_bag",
+
+}
