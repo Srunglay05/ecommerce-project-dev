@@ -1,0 +1,85 @@
+{% load static %}
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    {% include 'TZ/head.html' %}
+    {% include 'TZ/CSS.html' %}
+</head>
+
+<body>
+
+<header>
+    {% include 'TZ/HeaderStart.html' %}
+</header>
+
+<main>
+
+<section style="padding:100px 0;background:#f5f5f5;min-height:80vh;">
+
+```
+<div class="container">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-6">
+
+            <div class="card shadow-lg border-0">
+
+                <div class="card-body p-5">
+
+                    <h2 class="text-center mb-4">
+                        Change Profile Picture
+                    </h2>
+
+                    <form method="POST"
+                          enctype="multipart/form-data">
+
+                        {% csrf_token %}
+
+                        <div class="form-group">
+
+                            <label>
+                                Select Image
+                            </label>
+
+                            <input type="file"
+                                   name="avatar"
+                                   class="form-control">
+
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-warning btn-block">
+
+                            Upload Picture
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+</main>
+
+<footer>
+    {% include 'TZ/FooterStart.html' %}
+</footer>
+
+{% include 'TZ/JShere.html' %}
+
+</body>
+</html>

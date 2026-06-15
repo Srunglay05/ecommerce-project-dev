@@ -43,6 +43,18 @@ urlpatterns = [
 
     path('LoginTZ/', views.LoginTZ, name='LoginTZ'),
 
+    path('RegisterTZ/', views.RegisterTZ, name='RegisterTZ'),
+
+    path('ProfileTZ/', views.ProfileTZ, name='ProfileTZ'),
+
+    path('EditProfileTZ/', views.EditProfileTZ, name='EditProfileTZ'),
+
+    path('MyOrdersTZ/', views.MyOrdersTZ, name='MyOrdersTZ'),
+
+    path('OrderDetailTZ/<int:order_id>/', views.OrderDetailTZ, name='OrderDetailTZ'),
+
+    path('LogoutTZ/', views.LogoutTZ, name='LogoutTZ'),
+
     path('CartTZ/', views.CartTZ, name='CartTZ'),
 
     path('CheckoutTZ/', views.CheckoutTZ, name='CheckoutTZ'),
@@ -51,7 +63,7 @@ urlpatterns = [
 
     path('confirmation/<int:order_id>/', views.ConfirmationTZ, name='ConfirmationTZ'),
 
-
+    path('SearchTZ/', views.SearchTZ, name='SearchTZ'),
     path('ContactTZ/', views.ContactTZ, name='ContactTZ'),
 
    

@@ -32,3 +32,25 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="{% static 'StaticTZ/./assets/js/plugins.js' %}"></script>
     <script src="{% static 'StaticTZ/./assets/js/main.js' %}"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const searchBtn = document.querySelector(".search-switch");
+        const searchBox = document.querySelector(".search-model-box");
+        const closeBtn = document.querySelector(".search-close-btn");
+
+        if(searchBtn){
+            searchBtn.addEventListener("click", function(){
+                searchBox.classList.add("active");
+            });
+        }
+
+        if(closeBtn){
+            closeBtn.addEventListener("click", function(){
+                searchBox.classList.remove("active");
+            });
+        }
+
+    });
+    </script>

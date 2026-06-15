@@ -45,18 +45,65 @@
     </header>
     <main>
         <!-- Hero Area Start-->
-        <div class="slider-area ">
-            <div class="single-slider slider-height2 d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="hero-cap text-center">
-                                <h2>AMORE Products</h2>
+            <div class="col-xl-12">
+
+            {% if shop_banner %}
+            <section class="slider-area">
+                <div class="single-slider d-flex align-items-center slide-bg"
+                    style="min-height:85vh;">
+
+                    <div class="container-fluid">
+
+                        <div class="row align-items-center">
+
+                            <!-- Text Section -->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+
+                                <div class="hero__caption px-5">
+
+                                    {{ shop_banner.BannerHead|safe }}
+
+                                    <br>
+
+                                    {{ shop_banner.BannerBody|safe }}
+
+                                    <br>
+
+                                    <div class="hero__btn mt-4">
+                                        <a href="{% url 'ShopTZ' %}"
+                                        class="btn hero-btn">
+                                            Shop Now
+                                        </a>
+                                    </div>
+
+                                </div>
+
                             </div>
+
+                            <!-- Image Section -->
+                            <div class="col-xl-8 col-lg-8 col-md-8 d-none d-md-block p-0">
+
+                                {% if shop_banner.BannerImage %}
+                                <img src="{{ shop_banner.BannerImage.url }}"
+                                    alt=""
+                                    style="
+                                        width:100%;
+                                        height:85vh;
+                                        object-fit:cover;
+                                        display:block;
+                                    ">
+                                {% endif %}
+
+                            </div>
+
                         </div>
+
                     </div>
+
                 </div>
-            </div>
+            </section>
+            {% endif %}
+
         </div>
         <!-- Hero Area End-->
         <!-- Latest Products Start -->
@@ -70,7 +117,9 @@
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <a class="nav-item nav-link active" id="nav-lipgloss-tab" data-toggle="tab" href="#nav-lipgloss" role="tab" aria-controls="nav-lipgloss" aria-selected="true">Lip Gloss</a>
                                     <a class="nav-item nav-link" id="nav-blush-tab" data-toggle="tab" href="#nav-blush" role="tab" aria-controls="nav-blush" aria-selected="false">Blush</a>
-                                    
+                                    <a class="nav-item nav-link" id="nav-lipliner-tab" data-toggle="tab" href="#nav-lipliner" role="tab" aria-controls="nav-lipliner" aria-selected="false">Lip Liner</a>
+                                    <a class="nav-item nav-link" id="nav-shimmer-tab" data-toggle="tab" href="#nav-shimmer" role="tab" aria-controls="nav-shimmer" aria-selected="false">Shimmer</a>
+
                             </nav>
  
                         </nav>
@@ -84,45 +133,131 @@
                 </div>
                 <!-- Nav Card -->
      <div class="tab-content" id="nav-tabContent">
-      <!-- Lip Gloss tab -->
-      <div class="tab-pane fade show active" id="nav-lipgloss" role="tabpanel" aria-labelledby="nav-lipgloss-tab">
+      <!-- Nav Card -->
+<div class="tab-content" id="nav-tabContent">
+
+    <!-- Lip Gloss tab -->
+    <div class="tab-pane fade show active" id="nav-lipgloss" role="tabpanel" aria-labelledby="nav-lipgloss-tab">
         <div class="row">
-          {% for product in lip_gloss %}
+            {% for product in lip_gloss %}
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-              <div class="single-popular-items mb-50 text-center">
-                <div class="popular-img">
-                  <img src="{{ product.ProLImage.url }}" alt="">
-                </div>
-                <div class="popular-caption">
-                  <a href="{% url 'ProDetailTZ' 'list' product.id %}">{{ product.ProLName }}</a>
-                  <span>${{ product.ProLPrice }}</span>
-                </div>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
+                <div class="single-popular-items mb-50 text-center">
 
-  <!-- Blush tab -->
-  <div class="tab-pane fade" id="nav-blush" role="tabpanel" aria-labelledby="nav-blush-tab">
-    <div class="row">
-      {% for product in blush %}
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-          <div class="single-popular-items mb-50 text-center">
-            <div class="popular-img">
-              <img src="{{ product.ProLImage.url }}" alt="">
+                    <div class="popular-img">
+
+                        {% if product.ProLImage %}
+                            <img src="{{ product.ProLImage.url }}" alt="">
+                        {% else %}
+                            <img src="{% static 'assets/img/no-image.png' %}" alt="">
+                        {% endif %}
+
+                    </div>
+
+                    <div class="popular-caption">
+                        <a href="{% url 'ProDetailTZ' 'list' product.id %}">
+                            {{ product.ProLName }}
+                        </a>
+                        <span>${{ product.ProLPrice }}</span>
+                    </div>
+
+                </div>
             </div>
-            <div class="popular-caption">
-              <a href="{% url 'ProDetailTZ' 'list' product.id %}">{{ product.ProLName }}</a>
-              <span>${{ product.ProLPrice }}</span>
-            </div>
-          </div>
+            {% endfor %}
         </div>
-      {% endfor %}
     </div>
-  </div>
 
+    <!-- Blush tab -->
+    <div class="tab-pane fade" id="nav-blush" role="tabpanel" aria-labelledby="nav-blush-tab">
+        <div class="row">
+            {% for product in blush %}
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="single-popular-items mb-50 text-center">
 
+                    <div class="popular-img">
+
+                        {% if product.ProLImage %}
+                            <img src="{{ product.ProLImage.url }}" alt="">
+                        {% else %}
+                            <img src="{% static 'assets/img/no-image.png' %}" alt="">
+                        {% endif %}
+
+                    </div>
+
+                    <div class="popular-caption">
+                        <a href="{% url 'ProDetailTZ' 'list' product.id %}">
+                            {{ product.ProLName }}
+                        </a>
+                        <span>${{ product.ProLPrice }}</span>
+                    </div>
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Lip Liner tab -->
+    <div class="tab-pane fade" id="nav-lipliner" role="tabpanel" aria-labelledby="nav-lipliner-tab">
+        <div class="row">
+            {% for product in lip_liner %}
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="single-popular-items mb-50 text-center">
+
+                    <div class="popular-img">
+
+                        {% if product.ProLImage %}
+                            <img src="{{ product.ProLImage.url }}" alt="">
+                        {% else %}
+                            <img src="{% static 'assets/img/no-image.png' %}" alt="">
+                        {% endif %}
+
+                    </div>
+
+                    <div class="popular-caption">
+                        <a href="{% url 'ProDetailTZ' 'list' product.id %}">
+                            {{ product.ProLName }}
+                        </a>
+                        <span>${{ product.ProLPrice }}</span>
+                    </div>
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Shimmer tab -->
+    <div class="tab-pane fade" id="nav-shimmer" role="tabpanel" aria-labelledby="nav-shimmer-tab">
+        <div class="row">
+            {% for product in shimmer %}
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="single-popular-items mb-50 text-center">
+
+                    <div class="popular-img">
+
+                        {% if product.ProLImage %}
+                            <img src="{{ product.ProLImage.url }}" alt="">
+                        {% else %}
+                            <img src="{% static 'assets/img/no-image.png' %}" alt="">
+                        {% endif %}
+
+                    </div>
+
+                    <div class="popular-caption">
+                        <a href="{% url 'ProDetailTZ' 'list' product.id %}">
+                            {{ product.ProLName }}
+                        </a>
+                        <span>${{ product.ProLPrice }}</span>
+                    </div>
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+<!-- End Nav Card -->
 
 
                 <!-- End Nav Card -->
@@ -158,7 +293,7 @@
         <!-- Footer End-->
     </footer>
     <!--? Search model Begin -->
-    {% include 'TZ/SearchModelBegin.html' %}
+    <!--{% include 'TZ/SearchModelBegin.html' %}-->
 
     <!-- Search model end -->
 

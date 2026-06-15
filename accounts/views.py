@@ -1,8 +1,12 @@
-from urllib import response
+from urllib import request, response
 from django.db.models import Count
 from django.http import Http404, HttpRequest, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
+from django.contrib.auth import authenticate, login, logout
+from django.shortcuts import render, redirect
 from rest_framework import viewsets
+from django.contrib.auth.models import User
+from django.contrib import messages
 
 from .authentication import QueryParamAccessTokenAuthentication
 from .models import *
@@ -11,6 +15,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.exceptions import AuthenticationFailed
 from django.contrib.auth.decorators import login_required
 from django.db.models import Sum, F, DecimalField, ExpressionWrapper
+from django.db.models import Q
 
 import json
 from django.http import JsonResponse
@@ -59,7 +64,7 @@ def get_common_context():
     customer_links = links[3:6]
 
     return {
-        'Menus': Menu.objects.annotate(sub_count=Count('submenus')),
+        'Menus': Menu.objects.annotate( sub_count=Count('submenus')).order_by('MenuOrder'),        
         'SubMenus': SubMenu.objects.all(),
         'topBanner': TopBanner.objects.first(),
         'sliders': Slide.objects.all(),
@@ -82,22 +87,46 @@ def IndexTZ(request):
 
 def ShopTZ(request):
     context = get_common_context()
+
+    shop_banner = PageBanner.objects.filter(
+        PageName='shop'
+    ).first()
+
     context.update({
-        'lip_gloss': ProductList.objects.filter(ProCategoryID__CategoryName__iexact='Lip Gloss'),
-        'blush': ProductList.objects.filter(ProCategoryID__CategoryName__iexact='Blush'),
-        'lip_liner_gloss_set': ProductList.objects.filter(ProCategoryID__CategoryName__iexact='Lip Liner & Gloss Set'),
+        'lip_gloss': ProductList.objects.filter(
+            ProCategoryID__CategoryName__iexact='Lip Gloss'
+        ),
+
+        'blush': ProductList.objects.filter(
+            ProCategoryID__CategoryName__iexact='Blush'
+        ),
+
+        'lip_liner': ProductList.objects.filter(
+            ProCategoryID__CategoryName__iexact='Lip Line'
+        ),
+
+        'shimmer': ProductList.objects.filter(
+            ProCategoryID__CategoryName__iexact='Shimmer'
+        ),
+
+        'shop_banner': shop_banner,
     })
+
     return render(request, 'TZ/shop.html', context)
-
-
-
 
 
 def AboutTZ(request):
     context = get_common_context()
+
+    about_banner = PageBanner.objects.filter(
+        PageName='about'
+    ).first()
+
     context.update({
         'abtus': AboutUs.objects.all(),
+        'about_banner': about_banner,
     })
+
     return render(request, 'TZ/about.html', context)
 
 
@@ -139,9 +168,16 @@ def ProDetailTZ(request, type, id):
 
 def BlogTZ(request):
     context = get_common_context()
+
+    blog_banner = PageBanner.objects.filter(
+        PageName='blog'
+    ).first()
+
     context.update({
         'blogs': Blog.objects.all(),
+        'blog_banner': blog_banner,
     })
+
     return render(request, 'TZ/blog.html', context)
 
 
@@ -162,10 +198,79 @@ def BlogDetailTZ(request, blog_id):
     })
     return render(request, 'TZ/blog-details.html', context)
 
-
 def LoginTZ(request):
-    return render(request, 'TZ/login.html', get_common_context())
 
+    if request.user.is_authenticated:
+        return redirect('ProfileTZ')
+
+    context = get_common_context()
+
+    if request.method == 'POST':
+
+        username = request.POST.get('name')
+        password = request.POST.get('password')
+
+        user = authenticate(
+            request,
+            username=username,
+            password=password
+        )
+
+        if user is not None:
+
+            login(request, user)
+
+            return redirect('ProfileTZ')
+
+        else:
+
+            context['error'] = 'Invalid username or password'
+
+    return render(
+        request,
+        'TZ/login.html',
+        context
+    )
+
+def RegisterTZ(request):
+
+    context = get_common_context()
+
+    if request.method == 'POST':
+
+        first_name = request.POST.get('first_name')
+        last_name = request.POST.get('last_name')
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        confirm_password = request.POST.get('confirm_password')
+
+        if password != confirm_password:
+            context['error'] = 'Passwords do not match'
+            return render(request, 'TZ/register.html', context)
+
+        if User.objects.filter(username=username).exists():
+            context['error'] = 'Username already exists'
+            return render(request, 'TZ/register.html', context)
+
+        user = User.objects.create_user(
+            username=username,
+            email=email,
+            password=password,
+            first_name=first_name,
+            last_name=last_name
+        )
+
+        return redirect('LoginTZ')
+
+    return render(request, 'TZ/register.html', context)
+
+
+def LogoutTZ(request):
+
+    logout(request)
+
+    return redirect('IndexTZ')
 
 def CartTZ(request):
     context = get_common_context()
@@ -197,7 +302,7 @@ def CheckoutTZ(request):
         })
 
     subtotal = sum(item.price * item.quantity for item in cart_items)
-    shipping = 0 if subtotal > 100 else 50
+    shipping = 0 if subtotal > 100 else 3
     total = subtotal + shipping
 
     qr_codes = QRCode.objects.all()
@@ -225,10 +330,26 @@ def CheckoutTZ(request):
     return render(request, 'TZ/checkout.html', context)
 
 
+def SearchTZ(request):
 
+    query = request.GET.get('q', '')
 
+    products = ProductList.objects.all()
 
+    if query:
+        products = ProductList.objects.filter(
+            Q(ProLName__icontains=query) |
+            Q(ProCategoryID__CategoryName__icontains=query)
+        ).distinct()
 
+    context = get_common_context()
+
+    context.update({
+        'query': query,
+        'products': products,
+    })
+
+    return render(request, 'TZ/search.html', context)
 
 
 @transaction.atomic
@@ -250,19 +371,24 @@ def checkout(request):
 
         # 2️⃣ Calculate total from cart
         subtotal = sum(item.price * item.quantity for item in cart_items)
-        shipping = Decimal('10.00')  # instead of 10.00 (float)
+        shipping = Decimal('3.00')  # instead of 10.00 (float)
         total_amount = subtotal + shipping
 
         # 3️⃣ Create the order
         order = Order.objects.create(
+
+            user=request.user,
+
             customerName=customer_name,
             customerPhone=customer_phone,
-            customerAddress = customer_address,
-            customerEmail = customer_email,
+            customerAddress=customer_address,
+            customerEmail=customer_email,
 
             totalAmount=total_amount,
             qr_code_id=qr_code_id if qr_code_id else None,
+
         )
+
 
         # 4️⃣ Create order items
         for cart_item in cart_items:
@@ -282,20 +408,15 @@ def checkout(request):
     return redirect('CartTZ')
 
 
-
-
-
-
-
-
-
 def ContactTZ(request):
     context = get_common_context()
-    context.update({
-        'contacts': ContactUs.objects.all()
-    })
-    return render(request, 'TZ/contact.html', context)
 
+    context.update({
+        'contacts': ContactUs.objects.all(),
+        'contact_banner': PageBanner.objects.filter(PageName='contact').first(),
+    })
+
+    return render(request, 'TZ/contact.html', context)
 
 
 
@@ -309,7 +430,7 @@ def ConfirmationTZ(request, order_id):
     
 
     context = {
-        'Menus': Menu.objects.annotate(sub_count=Count('submenus')),
+        'Menus': Menu.objects.annotate(sub_count=Count('submenus')).order_by('MenuOrder'),
         'SubMenus': SubMenu.objects.all(),
         'topBanner': TopBanner.objects.first(),
         'sliders': Slide.objects.all(),
@@ -319,54 +440,105 @@ def ConfirmationTZ(request, order_id):
         'customer_links': customer_links,
         'order': order,
         'subtotal': subtotal,
-        'total': subtotal + 10,
+        'total': subtotal + Decimal('3.00'),
     }
     return render(request, 'TZ/confirmation.html', context)
 
 
 
 def place_order_api(request):
-    if request.method == "POST":
-        try:
-            data = request.POST
-            # Get QR code if selected
-            qr_code_id = data.get("QRCodeSelect")
-            qr_code_instance = None
-            if qr_code_id:
-                from .models import QRCode
-                qr_code_instance = QRCode.objects.filter(id=qr_code_id).first()
 
+    if request.method == "POST":
+
+        try:
+
+            data = request.POST
+
+            # Get selected QR Code
+            qr_code_id = data.get("QRCodeSelect")
+
+            qr_code_instance = None
+
+            if qr_code_id:
+
+                from .models import QRCode
+
+                qr_code_instance = QRCode.objects.filter(
+                    id=qr_code_id
+                ).first()
+
+            # Create Order
             order = Order.objects.create(
+
+                user=request.user if request.user.is_authenticated else None,
+
                 customerName=data.get("customerName"),
+
                 customerPhone=data.get("customerPhone"),
+
                 customerAddress=data.get("customerAddress"),
+
                 customerEmail=data.get("customerEmail"),
+
                 totalAmount=data.get("totalAmount"),
-                QRCodeInvoice=request.FILES.get("QRCodeInvoice"),
-                qr_code=qr_code_instance,  
+
+                QRCodeInvoice=request.FILES.get(
+                    "QRCodeInvoice"
+                ),
+
+                qr_code=qr_code_instance,
+
             )
 
-            
-            items = json.loads(data.get("items", "[]"))
+            # Create Order Items
+            items = json.loads(
+                data.get("items", "[]")
+            )
+
             for item in items:
+
                 OrderItem.objects.create(
+
                     order=order,
-                    productName=item.get("productName"),
-                    price=item.get("price"),
-                    qty=item.get("qty"),
+
+                    productName=item.get(
+                        "productName"
+                    ),
+
+                    price=item.get(
+                        "price"
+                    ),
+
+                    qty=item.get(
+                        "qty"
+                    ),
+
                 )
 
-            return redirect('ConfirmationTZ', order_id=order.id)
+            return redirect(
+                'ConfirmationTZ',
+                order_id=order.id
+            )
 
         except Exception as e:
-            # Return checkout page with error message if something fails
+
             context = get_common_context()
+
             context.update({
+
                 "error": str(e),
+
             })
-            return render(request, "TZ/confirmation.html", context)
+
+            return render(
+                request,
+                "TZ/confirmation.html",
+                context
+            )
 
     return redirect('CheckoutTZ')
+
+
 
 
 
@@ -451,7 +623,7 @@ def view_cart(request):
     total_price = sum(item['subtotal'] for item in cart_with_products)
 
     topBanner = TopBanner.objects.first()
-    Menus = Menu.objects.annotate(sub_count=Count('submenus'))
+    Menus = Menu.objects.annotate(sub_count=Count('submenus')).order_by('MenuOrder')
     SubMenus = SubMenu.objects.all()
     sliders = Slide.objects.all()
     footers = Footer.objects.all()
@@ -675,3 +847,127 @@ class SubMenuView(viewsets.ModelViewSet):
             raise AuthenticationFailed("Invalid or inactive token")
         queryset = super().get_queryset()
         return queryset
+    
+
+from django.contrib.auth.decorators import login_required
+from .models import UserProfile, Order, CartItem
+from django.shortcuts import get_object_or_404
+from django.contrib.auth.decorators import login_required
+
+@login_required
+def ProfileTZ(request):
+
+    context = get_common_context()
+
+    profile, created = UserProfile.objects.get_or_create(
+        user=request.user
+    )
+
+    total_orders = Order.objects.filter(
+        user=request.user
+    ).count()
+
+    cart_count = CartItem.objects.filter(
+        user=request.user
+    ).count()
+
+    member_since = request.user.date_joined.year
+
+    recent_orders = Order.objects.filter(
+        user=request.user
+    ).order_by('-id')[:5]
+
+    context.update({
+
+        'user_profile': request.user,
+
+        'profile': profile,
+
+        'total_orders': total_orders,
+
+        'cart_count': cart_count,
+
+        'member_since': member_since,
+
+        'recent_orders': recent_orders,
+
+    })
+
+    return render(
+        request,
+        'TZ/profile.html',
+        context
+    )
+
+@login_required
+def OrderDetailTZ(request, order_id):
+
+    order = get_object_or_404(
+        Order,
+        id=order_id,
+        user=request.user
+    )
+
+    order_items = OrderItem.objects.filter(
+        order=order
+    )
+
+    context = get_common_context()
+
+    context.update({
+        'order': order,
+        'order_items': order_items,
+    })
+
+    return render(
+        request,
+        'TZ/order_detail.html',
+        context
+    )
+
+
+@login_required
+def EditProfileTZ(request):
+
+    profile, created = UserProfile.objects.get_or_create(
+        user=request.user
+    )
+
+    if request.method == 'POST':
+
+        if request.FILES.get('avatar'):
+
+            profile.avatar = request.FILES['avatar']
+            profile.save()
+
+        return redirect('ProfileTZ')
+
+    return render(
+        request,
+        'TZ/edit_profile.html',
+        {
+            'profile': profile
+        }
+    )
+
+
+from django.contrib.auth.decorators import login_required
+
+@login_required(login_url='LoginTZ')
+def MyOrdersTZ(request):
+
+    orders = Order.objects.filter(
+        user=request.user
+    ).order_by('-id')
+
+    context = get_common_context()
+
+    context.update({
+        'orders': orders
+    })
+
+    return render(
+        request,
+        'TZ/my_orders.html',
+        context
+    )

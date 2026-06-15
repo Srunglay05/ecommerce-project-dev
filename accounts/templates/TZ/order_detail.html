@@ -1,0 +1,156 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% include 'TZ/head.html' %}
+    {% include 'TZ/CSS.html' %}
+</head>
+
+<body>
+
+<header>
+    {% include 'TZ/HeaderStart.html' %}
+</header>
+
+<main>
+
+<section style="padding:80px 0;background:#f6f8fa;min-height:90vh;">
+
+<div class="container">
+
+    <div class="card shadow border-0">
+
+        <div class="card-body p-5">
+
+            <h2>
+                Order #{{ order.id }}
+            </h2>
+
+            <hr>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <p>
+                        <strong>Customer:</strong><br>
+                        {{ order.customerName }}
+                    </p>
+
+                    <p>
+                        <strong>Email:</strong><br>
+                        {{ order.customerEmail }}
+                    </p>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <p>
+                        <strong>Phone:</strong><br>
+                        {{ order.customerPhone }}
+                    </p>
+
+                    <p>
+                        <strong>Total:</strong><br>
+                        ${{ order.totalAmount }}
+                    </p>
+
+                </div>
+
+            </div>
+
+            <p>
+                <strong>Shipping Address:</strong><br>
+                {{ order.customerAddress }}
+            </p>
+
+            <hr>
+
+            <h4 class="mb-4">
+                Ordered Products
+            </h4>
+
+            <table class="table table-bordered">
+
+                <thead>
+
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                {% for item in order_items %}
+
+                    <tr>
+
+                        <td>{{ item.productName }}</td>
+
+                        <td>
+                            ${{ item.price }}
+                        </td>
+
+                        <td>
+                            {{ item.qty }}
+                        </td>
+
+                    </tr>
+
+                {% endfor %}
+
+                </tbody>
+
+            </table>
+
+            {% if order.QRCodeInvoice %}
+
+            <hr>
+
+            <h4>
+                Payment Proof
+            </h4>
+
+            <img src="{{ order.QRCodeInvoice.url }}"
+                 class="img-fluid"
+                 style="
+                 max-width:300px;
+                 border-radius:15px;
+                 border:1px solid #ddd;
+                 ">
+
+            {% endif %}
+
+            <br><br>
+
+            <a href="{% url 'MyOrdersTZ' %}"
+               class="btn btn-dark">
+
+               Back To Orders
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+    {% include 'TZ/FooterStart.html' %}
+</footer>
+
+{% include 'TZ/JShere.html' %}
+
+</body>
+</html>

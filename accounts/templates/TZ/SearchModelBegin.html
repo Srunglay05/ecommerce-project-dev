@@ -1,10 +1,35 @@
 {% load static %}
 
 <div class="search-model-box">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-btn">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Searching key.....">
-            </form>
-        </div>
+
+    <div class="search-close-btn">
+        <i class="ti-close"></i>
+    </div>      
+
+    <div class="search-container">
+
+        <h2>Search AMORE</h2>
+
+        <p>Find your favorite beauty products</p>
+
+        <form action="{% url 'SearchTZ' %}" method="GET">
+
+            <div class="search-wrapper">
+
+                <input
+                    type="text"
+                    name="q"
+                    placeholder="Search blush, lip gloss, shimmer oil..."
+                    required>
+
+                <button type="submit">
+                    Search
+                </button>
+
+            </div>
+
+        </form>
+
     </div>
+
+</div>

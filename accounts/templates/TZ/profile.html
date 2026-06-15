@@ -1,0 +1,374 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% include 'TZ/head.html' %}
+    {% include 'TZ/CSS.html' %}
+</head>
+
+<body>
+
+<header>
+    {% include 'TZ/HeaderStart.html' %}
+</header>
+
+<main>
+
+<section style="background:#f6f8fa;padding:60px 0;min-height:90vh;">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- SIDEBAR -->
+            <div class="col-lg-4 mb-4">
+
+                <div style="
+                    background:#fff;
+                    border-radius:20px;
+                    padding:35px;
+                    box-shadow:0 10px 30px rgba(0,0,0,.05);
+                ">
+
+                    <div class="text-center">
+
+                        {% if profile.avatar %}
+                            <img src="{{ profile.avatar.url }}"
+                                 alt="Profile"
+                                 style="
+                                 width:180px;
+                                 height:180px;
+                                 border-radius:50%;
+                                 object-fit:cover;
+                                 border:5px solid #d4af37;
+                                 box-shadow:0 8px 25px rgba(212,175,55,.35);
+                                 ">
+                        {% else %}
+                            <div style="
+                                width:180px;
+                                height:180px;
+                                border-radius:50%;
+                                background:#d4af37;
+                                color:white;
+                                font-size:60px;
+                                font-weight:bold;
+                                display:flex;
+                                align-items:center;
+                                justify-content:center;
+                                margin:auto;
+                            ">
+                                {{ user_profile.first_name|first }}{{ user_profile.last_name|first }}
+                            </div>
+                        {% endif %}
+
+                        <h3 class="mt-4 mb-1">
+                            {{ user_profile.first_name }}
+                            {{ user_profile.last_name }}
+                        </h3>
+
+                        <p class="text-muted mb-2">
+                            @{{ user_profile.username }}
+                        </p>
+
+                        <div style="
+                        display:inline-block;
+                        background:#d4af37;
+                        color:white;
+                        padding:6px 18px;
+                        border-radius:30px;
+                        font-size:12px;
+                        font-weight:600;
+                        letter-spacing:1px;
+                        margin-bottom:15px;
+                        ">
+                            PREMIUM MEMBER
+                        </div>
+
+                        <p class="text-muted mb-4">
+                            Joined {{ user_profile.date_joined|date:'F Y' }}
+                        </p>
+
+                        <a href="{% url 'EditProfileTZ' %}"
+                           class="btn btn-danger btn-block">
+                            EDIT PROFILE
+                        </a>
+
+                    </div>
+
+                    <hr>
+
+                    <h6 class="mb-3">
+                        Account Menu
+                    </h6>
+
+                    <a href="{% url 'MyOrdersTZ' %}"
+                    class="btn btn-danger btn-block mb-2">
+                        📦 MY ORDERS
+                    </a>
+
+                    <a href="{% url 'CartTZ' %}"
+                       class="btn btn-danger btn-block mb-2">
+                        🛒 SHOPPING CART
+                    </a>
+
+                    <a href="{% url 'LogoutTZ' %}"
+                       class="btn btn-outline-danger btn-block mt-3">
+                        LOGOUT
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- MAIN CONTENT -->
+            <div class="col-lg-8">
+
+                <!-- ACCOUNT OVERVIEW -->
+                <div style="
+                    background:white;
+                    border-radius:20px;
+                    padding:35px;
+                    box-shadow:0 10px 30px rgba(0,0,0,.05);
+                    margin-bottom:25px;
+                ">
+
+                    <h3 class="mb-4">
+                        Account Overview
+                    </h3>
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+
+                            <div class="border rounded p-3">
+
+                                <small class="text-muted">
+                                    Full Name
+                                </small>
+
+                                <h5>
+                                    {{ user_profile.first_name }}
+                                    {{ user_profile.last_name }}
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <div class="border rounded p-3">
+
+                                <small class="text-muted">
+                                    Username
+                                </small>
+
+                                <h5>
+                                    {{ user_profile.username }}
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-12">
+
+                            <div class="border rounded p-3">
+
+                                <small class="text-muted">
+                                    Email Address
+                                </small>
+
+                                <h5>
+                                    {{ user_profile.email }}
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- DASHBOARD -->
+                <div class="row">
+
+                    <div class="col-md-4 mb-4">
+
+                        <div style="
+                            background:white;
+                            border-radius:15px;
+                            padding:25px;
+                            text-align:center;
+                            box-shadow:0 5px 15px rgba(0,0,0,.05);
+                            border-top:4px solid #d4af37;
+                        ">
+
+                            <h2 style="color:#d4af37;">
+                                {{ total_orders }}
+                            </h2>
+
+                            <h6>Total Orders</h6>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+
+                        <div style="
+                            background:white;
+                            border-radius:15px;
+                            padding:25px;
+                            text-align:center;
+                            box-shadow:0 5px 15px rgba(0,0,0,.05);
+                            border-top:4px solid #d4af37;
+                        ">
+
+                            <h2 style="color:#d4af37;">
+                                {{ cart_count }}
+                            </h2>
+
+                            <h6>Cart Items</h6>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+
+                        <div style="
+                            background:white;
+                            border-radius:15px;
+                            padding:25px;
+                            text-align:center;
+                            box-shadow:0 5px 15px rgba(0,0,0,.05);
+                            border-top:4px solid #d4af37;
+                        ">
+
+                            <h2 style="color:#d4af37;">
+                                {{ user_profile.date_joined|date:"Y" }}
+                            </h2>
+
+                            <h6>Member Since</h6>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RECENT ORDERS -->
+                <div style="
+                    background:white;
+                    border-radius:20px;
+                    padding:35px;
+                    box-shadow:0 10px 30px rgba(0,0,0,.05);
+                ">
+
+                    <h3 class="mb-4">
+                        Recent Orders
+                    </h3>
+
+                    {% for order in recent_orders %}
+
+                    <div class="border rounded p-3 mb-3">
+
+                        <div class="row align-items-center">
+
+                            <div class="col-md-4">
+
+                                <a href="{% url 'OrderDetailTZ' order.id %}"
+                                style="
+                                color:#111;
+                                font-weight:600;
+                                text-decoration:none;
+                                font-size:15px;
+                                ">
+
+                                    Order #{{ order.id }}
+
+                                </a>
+
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <strong style="color:#d4af37;">
+                                    ${{ order.totalAmount }}
+                                </strong>
+                            </div>
+
+                            <div class="col-md-4 text-right">
+
+                                {% if order.status == 'Pending' %}
+
+                                <span class="badge badge-warning">
+                                    Pending
+                                </span>
+
+                                {% elif order.status == 'Processing' %}
+
+                                <span class="badge badge-info">
+                                    Processing
+                                </span>
+
+                                {% elif order.status == 'Shipped' %}
+
+                                <span class="badge badge-primary">
+                                    Shipped
+                                </span>
+
+                                {% elif order.status == 'Delivered' %}
+
+                                <span class="badge badge-success">
+                                    Delivered
+                                </span>
+
+                                {% elif order.status == 'Cancelled' %}
+
+                                <span class="badge badge-danger">
+                                    Cancelled
+                                </span>
+
+                                {% endif %}
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {% empty %}
+
+                    <div class="alert alert-light">
+
+                        No orders found.
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    {% include 'TZ/FooterStart.html' %}
+</footer>
+
+{% include 'TZ/JShere.html' %}
+
+</body>
+</html>

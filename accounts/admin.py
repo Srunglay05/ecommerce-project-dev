@@ -1,11 +1,18 @@
 from django.contrib import admin
 from .models import *
+from .models import PageBanner
 # Register your models here.
+
+from django.contrib import admin
+
+admin.site.site_header = "AMORE BEAUTY ADMIN"
+admin.site.site_title = "AMORE Admin"
+admin.site.index_title = "AMORE Management Dashboard"
 
 admin.site.register(TopBanner)
 admin.site.register(Menu)
 admin.site.register(SubMenu)
-
+admin.site.register(PageBanner)
 admin.site.register(Slide)
 
 admin.site.register(NewArrivals)
@@ -39,5 +46,10 @@ admin.site.register(AccessToken)
 admin.site.register(CartItem)
 admin.site.register(Gallery)
 admin.site.register(Privacy)
+
+from django.contrib import admin
+from .models import UserProfile
+
+admin.site.register(UserProfile)
 
 

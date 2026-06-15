@@ -1,0 +1,104 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% include 'TZ/head.html' %}
+    {% include 'TZ/CSS.html' %}
+</head>
+
+<body>
+
+<header>
+    {% include 'TZ/HeaderStart.html' %}
+</header>
+
+<main>
+
+<section style="padding:80px 0;background:#f7f7f7;min-height:80vh;">
+
+    <div class="container">
+
+        <h2 class="mb-5">
+            My Orders
+        </h2>
+
+        <div class="card shadow-sm">
+
+            <div class="card-body">
+
+                <table class="table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Order ID</th>
+                            <th>Name</th>
+                            <th>Total</th>
+                            <th>Email</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        {% for order in orders %}
+
+                        <tr>
+
+                            <td>#{{ order.id }}</td>
+
+                            <td>
+                                {{ order.customerName }}
+                            </td>
+
+                            <td>
+                                ${{ order.totalAmount }}
+                            </td>
+
+                            <td>
+                                {{ order.customerEmail }}
+                            </td>
+
+                        </tr>
+
+                        {% empty %}
+
+                        <tr>
+
+                            <td colspan="4"
+                                class="text-center">
+
+                                No Orders Yet
+
+                            </td>
+
+                        </tr>
+
+                        {% endfor %}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    {% include 'TZ/FooterStart.html' %}
+</footer>
+
+{% include 'TZ/JShere.html' %}
+
+</body>
+</html>

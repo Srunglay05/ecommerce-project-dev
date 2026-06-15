@@ -1,0 +1,45 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    {% include 'TZ/head.html' %}
+    {% include 'TZ/CSS.html' %}
+
+</head>
+
+<body>
+
+<header>
+    {% include 'TZ/HeaderStart.html' %}
+</header>
+
+<main>
+    <div class="slider-area ">
+            <div class="single-slider slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap text-center">
+                                <h2>Register</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% include 'TZ/RegisterPart.html' %}
+
+</main>
+
+<footer>
+    {% include 'TZ/FooterStart.html' %}
+</footer>
+
+{% include 'TZ/JShere.html' %}
+
+</body>
+
+</html>

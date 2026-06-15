@@ -1,50 +1,25 @@
 {% load static %}
 
 <div class="gallery-area">
-    <div class="container-fluid p-0 fix">
-        <div class="row">
-            {% if gallerys %}
-                <!-- First gallery image -->
-                <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-gallery mb-30">
-                        <div class="gallery-img big-img" style="background-image: url('{{ gallerys.0.GallImage.url }}');"></div>
-                    </div>
-                </div>
+    <div class="container-fluid p-0">
 
-                <!-- Second gallery image (if exists) -->
-                {% if gallerys|length >= 2 %}
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-gallery mb-30">
-                            <div class="gallery-img big-img" style="background-image: url('{{ gallerys.1.GallImage.url }}');"></div>
-                        </div>
-                    </div>
-                {% else %}
-                    <!-- fallback static image -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-gallery mb-30">
-                            <div class="gallery-img big-img" style="background-image: url('{% static "assets/img/gallery/gallery2.png" %}');"></div>
-                        </div>
-                    </div>
-                {% endif %}
+        {% if gallerys and gallerys.0.GallImage %}
 
-                <!-- Last two small images (from database if available, otherwise static) -->
-                <div class="col-xl-3 col-lg-4 col-md-12">
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img"
-                                     style="background-image: url('{% if gallerys|length >= 3 %}{{ gallerys.2.GallImage.url }}{% else %}{% static "assets/img/gallery/gallery3.png" %}{% endif %}');"></div>
-                            </div>
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img"
-                                     style="background-image: url('{% if gallerys|length >= 4 %}{{ gallerys.3.GallImage.url }}{% else %}{% static "assets/img/gallery/gallery4.png" %}{% endif %}');"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            {% endif %}
-        </div>
+            <div class="single-gallery">
+
+                <img
+                    src="{{ gallerys.0.GallImage.url }}"
+                    alt="Gallery Banner"
+                    style="
+                        width:100%;
+                        height:auto;
+                        display:block;
+                    "
+                >
+
+            </div>
+
+        {% endif %}
+
     </div>
 </div>

@@ -53,6 +53,11 @@ class Menu(models.Model):
     MenuName = models.CharField(max_length=200, null=False, default='Menu')
     url_name = models.CharField(max_length=100, blank=True, null=True)
 
+    MenuOrder = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['MenuOrder']
+
     def __str__(self):
         return f'{self.MenuName}'
 
@@ -64,7 +69,6 @@ class Menu(models.Model):
             return reverse(self.url_name)
         except NoReverseMatch:
             return '#'
-
 
 class SubMenu(models.Model):
     SubMenuName = models.CharField(max_length=200, null=True)
@@ -91,6 +95,30 @@ class Slide(models.Model):
     SlideImage = models.ImageField(upload_to='SlideImage/', null=True, blank=True)
     def __str__(self):
             return f'{self.id} -> {self.SlideName}'
+    
+
+class PageBanner(models.Model):
+    PAGE_CHOICES = (
+        ('shop', 'Shop'),
+        ('blog', 'Blog'),
+        ('about', 'About Us'),
+        ('contact', 'Contact'),
+    )
+
+    PageName = models.CharField(max_length=20, choices=PAGE_CHOICES)
+
+    BannerHead = RichTextUploadingField(null=True, blank=True)
+    BannerBody = RichTextUploadingField(null=True, blank=True)
+
+    BannerImage = models.ImageField(
+        upload_to='PageBanner/',
+        null=True,
+        blank=True
+    )
+
+    def __str__(self):
+        return self.PageName
+
 
 class ProductCategory(models.Model):
     CategoryName = models.CharField(max_length=200, null=True)
@@ -268,36 +296,96 @@ class QRCode(models.Model):
     def __str__(self): return self.qrName
 
     
-
 class Order(models.Model):
+
+    STATUS_CHOICES = [
+
+        ('Pending', 'Pending'),
+
+        ('Processing', 'Processing'),
+
+        ('Shipped', 'Shipped'),
+
+        ('Delivered', 'Delivered'),
+
+        ('Cancelled', 'Cancelled'),
+
+    ]
+
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True
+    )
+
     customerName = models.CharField(max_length=255, null=True)
+
     customerPhone = models.CharField(max_length=20, null=True)
+
     customerAddress = models.CharField(max_length=555, null=True)
+
     customerEmail = models.CharField(max_length=555, null=True)
-    totalAmount = models.DecimalField(max_digits=10, decimal_places=2)
-    qr_code = models.ForeignKey(QRCode, on_delete=models.SET_NULL, null=True, blank=True)
-    QRCodeInvoice = models.ImageField(upload_to='qrcodes/', null=True, blank=True)
+
+    totalAmount = models.DecimalField(
+        max_digits=10,
+        decimal_places=2
+    )
+
+    status = models.CharField(
+        max_length=20,
+        choices=STATUS_CHOICES,
+        default='Pending'
+    )
+
+    qr_code = models.ForeignKey(
+        QRCode,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True
+    )
+
+    QRCodeInvoice = models.ImageField(
+        upload_to='qrcodes/',
+        null=True,
+        blank=True
+    )
 
     def generate_qrcode(self):
+
         qr_data = f"Order ID: {self.id}\nCustomer: {self.customerName}\nTotal: {self.totalAmount}"
+
         qr_img = qrcode.make(qr_data)
 
         buffer = BytesIO()
+
         qr_img.save(buffer, format='PNG')
+
         file_name = f"order_{self.id}_qr.png"
-        self.QRCodeInvoice.save(file_name, ContentFile(buffer.getvalue()), save=False)
+
+        self.QRCodeInvoice.save(
+            file_name,
+            ContentFile(buffer.getvalue()),
+            save=False
+        )
 
     def save(self, *args, **kwargs):
+
         is_new = self.pk is None
-        super().save(*args, **kwargs)  # Save to get an ID if new
+
+        super().save(*args, **kwargs)
 
         if is_new:
+
             self.generate_qrcode()
-            super().save(update_fields=['QRCodeInvoice'])
 
-    def __str__(self): return f'{self.customerName} --> {self.customerPhone} --> {self.customerAddress} --> {self.customerEmail} '
+            super().save(
+                update_fields=['QRCodeInvoice']
+            )
 
+    def __str__(self):
 
+        return f'{self.customerName}'
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, related_name='items', on_delete=models.CASCADE)
@@ -346,3 +434,32 @@ class CartItem(models.Model):
     def subtotal(self):
         return self.price * self.quantity
     
+
+class UserProfile(models.Model):
+
+    user = models.OneToOneField(
+        User,
+        on_delete=models.CASCADE
+    )
+
+    avatar = models.ImageField(
+        upload_to='profile/',
+        blank=True,
+        null=True
+    )
+
+    def __str__(self):
+        return self.user.username
+    
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from django.contrib.auth.models import User
+
+
+@receiver(post_save, sender=User)
+def create_user_profile(sender, instance, created, **kwargs):
+
+    if created:
+        UserProfile.objects.create(
+            user=instance
+        )

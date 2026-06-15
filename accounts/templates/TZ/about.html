@@ -4,68 +4,101 @@
 <html class="no-js" lang="zxx">
 <head>
     {% include 'TZ/head.html' %}
-
     {% include 'TZ/CSS.html' %}
 </head>
 
 <body>
-    <!--? Preloader Start -->
+
+    <!-- Preloader -->
     {% include 'TZ/PreloaderStart.html' %}
-    <!-- Preloader Start -->
+
     <header>
-        <!-- Header Start -->
         {% include 'TZ/HeaderStart.html' %}
-        <!-- Header End -->
     </header>
+
     <main>
-        <!-- Hero Area Start-->
-        <div class="slider-area ">
-            <div class="single-slider slider-height2 d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="hero-cap text-center">
-                                <h2>About Us</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+        <!-- About Banner Start -->
+        {% if about_banner %}
+        <section style="
+            padding-top:0px;
+            padding-bottom:0px;
+            background:#e3e3e3;
+        ">
+
+            <div class="container-fluid text-center">
+
+                {% if about_banner.BannerImage %}
+                <img
+                    src="{{ about_banner.BannerImage.url }}"
+                    alt="About Banner"
+                    style="
+                        width:85%;
+                        max-width:1600px;
+                        height:auto;
+                        display:inline-block;
+                    "
+                >
+                {% endif %}
+
             </div>
-        </div>
-        <!-- Hero Area End-->
+
+        </section>
+        {% endif %}
+        <!-- About Banner End -->
+
+
         <!-- About Details Start -->
         <div class="about-details section-padding30">
             <div class="container">
-                <div class="row">
-                    {% for abtus in abtus %}
-                        <div class="offset-xl-1 col-lg-8">
-                            <div class="about-details-cap mb-50">
-                                <h4>{{ abtus.Title_1|safe }}</h4>
-                                <p>{{ abtus.Description_1|safe }}</p>
-                            </div>
 
-                            <div class="about-details-cap" style="margin-bottom: 60px;">
-                                <h4>{{ abtus.Title_2|safe }}</h4>
-                                <p>{{ abtus.Description_2|safe }}</p>
-                            </div>
+                <div class="row">
+
+                    {% for abtus in abtus %}
+
+                    <div class="offset-xl-1 col-xl-10 col-lg-10">
+
+                        <div class="about-details-cap mb-50">
+
+                            <h4>
+                                {{ abtus.Title_1|safe }}
+                            </h4>
+
+                            <p>
+                                {{ abtus.Description_1|safe }}
+                            </p>
 
                         </div>
+
+                        <div class="about-details-cap mb-50">
+
+                            <h4>
+                                {{ abtus.Title_2|safe }}
+                            </h4>
+
+                            <p>
+                                {{ abtus.Description_2|safe }}
+                            </p>
+
+                        </div>
+
+                    </div>
+
                     {% endfor %}
+
                 </div>
+
             </div>
         </div>
         <!-- About Details End -->
-    </main>
-    <footer>
-        <!-- Footer Start-->
-       {% include 'TZ/FooterStart.html' %}
-        <!-- Footer End-->
-    </footer>
-    <!--? Search model Begin -->
-    {% include 'TZ/SearchModelBegin.html' %}
-    <!-- Search model end -->
 
-    <!-- JS here -->
+    </main>
+
+    <footer>
+        {% include 'TZ/FooterStart.html' %}
+    </footer>
+
+    {% include 'TZ/SearchModelBegin.html' %}
 
     {% include 'TZ/JShere.html' %}
 

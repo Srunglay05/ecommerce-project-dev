@@ -20,19 +20,30 @@
     </header>
     <main>
         <!--? Hero Area Start-->
-        <div class="slider-area ">
-            <div class="single-slider slider-height2 d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="hero-cap text-center">
-                                <h2>Our Contact</h2>
-                            </div>
-                        </div>
-                    </div>
+        {% if contact_banner %}
+            <section style="
+                background:#e3e3e3;
+            ">
+
+                <div class="container-fluid text-center">
+
+                    {% if contact_banner.BannerImage %}
+                    <img
+                        src="{{ contact_banner.BannerImage.url }}"
+                        alt="Contact Banner"
+                        style="
+                            width:85%;
+                            max-width:1600px;
+                            height:auto;
+                            display:inline-block;
+                        "
+                    >
+                    {% endif %}
+
                 </div>
-            </div>
-        </div>
+
+            </section>
+        {% endif %}
         <!--? Hero Area End-->
         <!-- ================ contact section start ================= -->
         <section class="contact-section">
