@@ -1,0 +1,15 @@
+.env
+
+env/
+venv/
+
+__pycache__/
+*.pyc
+
+media/
+
+backup.json
+accounts_backup.json
+full_backup.json
+clean_data.json
+data.json
