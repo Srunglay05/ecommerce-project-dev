@@ -13,3 +13,8 @@ accounts_backup.json
 full_backup.json
 clean_data.json
 data.json
+
+*.json
+*.sql
+*.sqlite3
+backup_archive/
